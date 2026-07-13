@@ -127,14 +127,14 @@ $contact_loc   = get_theme_mod('flyrec_contact_location',  'Beograd, Srbija');
         <div class="container">
 
             <div class="section-header fade-up">
-                <span class="section-label"><?php esc_html_e( 'Iz vazduha', 'flyrec' ); ?></span>
-                <h2 class="section-title"><?php esc_html_e( 'Najnoviji snimci', 'flyrec' ); ?></h2>
+                <span class="section-label"><?php esc_html_e('Iz vazduha', 'flyrec'); ?></span>
+                <h2 class="section-title"><?php esc_html_e('Najnoviji snimci', 'flyrec'); ?></h2>
                 <p class="section-subtitle">
-                    <?php esc_html_e( 'Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha.', 'flyrec' ); ?>
+                    <?php esc_html_e('Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha.', 'flyrec'); ?>
                 </p>
             </div>
 
-            <?php echo do_shortcode( '[flyrec_instagram_feed]' ); ?>
+            <?php echo do_shortcode('[flyrec_instagram_feed]'); ?>
 
         </div>
     </section>
@@ -322,7 +322,7 @@ $contact_loc   = get_theme_mod('flyrec_contact_location',  'Beograd, Srbija');
                             <div>
                                 <span class="contact-label"><?php esc_html_e('Instagram', 'flyrec'); ?></span>
                                 <a href="<?php echo esc_url($contact_ig); ?>" class="contact-value" target="_blank" rel="noopener noreferrer">
-                                    @flyrec
+                                    @flyrec_
                                 </a>
                             </div>
                         </li>
