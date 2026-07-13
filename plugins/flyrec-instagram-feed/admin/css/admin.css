@@ -1,0 +1,32 @@
+.fig-wrap .fig-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 20px 0;
+    max-width: 900px;
+}
+
+.fig-wrap .fig-card h2 {
+    margin-top: 0;
+}
+
+.fig-status {
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.fig-status--ok    { background: #eafaf0; color: #1f7a3d; border: 1px solid #b7ebc8; }
+.fig-status--warn  { background: #fff8e6; color: #8a6100; border: 1px solid #ffe4a3; }
+.fig-status--error { background: #fdeceb; color: #b32d2e; border: 1px solid #f6c6c4; }
+
+.fig-muted { color: #666; font-weight: 400; }
+.fig-ok-text { color: #1f7a3d; }
+.fig-error-text { color: #b32d2e; }
+
+.fig-wrap .button .spinner {
+    float: none;
+    margin: 0 0 0 6px;
+}

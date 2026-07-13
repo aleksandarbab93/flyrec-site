@@ -1,0 +1,264 @@
+/**
+ * Flyrec Instagram Feed – frontend stilovi.
+ * Podrazumevane vrednosti prate FlyRec temu (tamna pozadina, crveni akcenat),
+ * ali plugin je samostalan — radi i bez te teme (fallback boje ispod).
+ * Ako je aktivna FlyRec tema, [data-theme] atribut na <html> automatski
+ * prebacuje na svetlu varijantu (isti mehanizam kao ostatak sajta).
+ */
+.fig-grid-wrapper {
+    --fig-accent: #e8312a;
+    --fig-bg-card: #141414;
+    --fig-bg-card-hover: #1a1a1a;
+    --fig-border: #2a2a2a;
+    --fig-text: #f0f0f0;
+    --fig-text-muted: #a0a0a0;
+    --fig-radius: 10px;
+    font-family: inherit;
+}
+
+[data-theme="light"] .fig-grid-wrapper {
+    --fig-bg-card: #ffffff;
+    --fig-bg-card-hover: #fafafa;
+    --fig-border: #e4e4e4;
+    --fig-text: #1a1a1a;
+    --fig-text-muted: #6a6a6a;
+}
+
+.fig-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.fig-grid--cols-1 { grid-template-columns: repeat(1, 1fr); }
+.fig-grid--cols-2 { grid-template-columns: repeat(2, 1fr); }
+.fig-grid--cols-3 { grid-template-columns: repeat(3, 1fr); }
+.fig-grid--cols-4 { grid-template-columns: repeat(4, 1fr); }
+.fig-grid--cols-5 { grid-template-columns: repeat(5, 1fr); }
+.fig-grid--cols-6 { grid-template-columns: repeat(6, 1fr); }
+
+@media (max-width: 992px) {
+    .fig-grid { grid-template-columns: repeat(3, 1fr) !important; }
+}
+@media (max-width: 600px) {
+    .fig-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2px; }
+}
+
+.fig-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    background: var(--fig-bg-card);
+    cursor: pointer;
+    outline: none;
+}
+
+.fig-item--vertical { aspect-ratio: 9 / 16; }
+.fig-item--natural  { aspect-ratio: 4 / 5; }
+
+.fig-item-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fig-item-thumb--placeholder {
+    background: linear-gradient(135deg, #111 0%, #1e1e1e 50%, #111 100%);
+}
+
+.fig-item:hover .fig-item-thumb,
+.fig-item:focus-visible .fig-item-thumb { transform: scale(1.06); }
+
+.fig-item-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.28);
+    border: 1.5px solid rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), opacity 0.2s ease, background 0.2s ease;
+}
+
+.fig-item--vertical .fig-item-play { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.fig-item:hover .fig-item-play,
+.fig-item:focus-visible .fig-item-play {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.fig-item-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 55%);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.fig-item:hover .fig-item-overlay,
+.fig-item:focus-visible .fig-item-overlay { opacity: 1; }
+
+.fig-item-caption {
+    color: #fff;
+    font-size: 12.5px;
+    line-height: 1.4;
+    margin: 0 0 4px;
+}
+
+.fig-item-date {
+    color: rgba(255,255,255,0.75);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.fig-grid-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.fig-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--fig-border);
+    background: transparent;
+    color: var(--fig-text);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.fig-btn:hover {
+    border-color: var(--fig-accent);
+    color: var(--fig-accent);
+}
+
+.fig-btn--ig {
+    background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 60%, #fcb045 100%);
+    border-color: transparent;
+    color: #fff;
+}
+.fig-btn--ig:hover { color: #fff; filter: brightness(1.08); transform: translateY(-2px); }
+
+.fig-btn[disabled] { opacity: 0.6; cursor: default; }
+
+.fig-empty-admin-notice {
+    padding: 14px 18px;
+    background: rgba(232,49,42,0.06);
+    border: 1px dashed var(--fig-accent, #e8312a);
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* ── LIGHTBOX MODAL ─────────────────────────── */
+.fig-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    background: rgba(0,0,0,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.fig-modal.fig-modal--open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fig-modal-content {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fig-modal-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 100001;
+}
+.fig-modal-close:hover { background: rgba(255,255,255,0.2); }
+
+.fig-modal-spinner {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-top-color: #fff;
+    animation: fig-spin 0.8s linear infinite;
+    display: none;
+}
+.fig-modal-spinner--active { display: block; }
+
+@keyframes fig-spin { to { transform: rotate(360deg); } }
+
+.fig-modal-embed {
+    width: 100%;
+    max-height: 85vh;
+    overflow: auto;
+}
+.fig-modal-embed iframe,
+.fig-modal-embed blockquote { width: 100% !important; max-width: 100% !important; }
+
+.fig-modal-img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 8px;
+}
+
+.fig-modal-fallback {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.fig-modal-fallback a {
+    color: var(--fig-accent, #e8312a);
+    font-weight: 600;
+}

@@ -1,0 +1,16 @@
+# Ignorisi sve po default-u
+/*
+
+# ...osim ovoga sto pratimo:
+!/.gitignore
+!/themes/
+/themes/*
+!/themes/flyrec/
+!/plugins/
+/plugins/*
+!/plugins/flyrec-instagram-feed/
+
+# Standardne stvari koje ne zelimo cak i unutar pracenih foldera
+**/.DS_Store
+**/node_modules/
+**/*.log

@@ -1,0 +1,555 @@
+# FlyRec WordPress Theme
+# Copyright (C) 2026 FlyRec Studio
+# This file is distributed under the same license as the FlyRec theme.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FlyRec 1.0.0\n"
+"Report-Msgid-Bugs-To: info@flyrec.rs\n"
+"POT-Creation-Date: 2026-05-26 09:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr_RS\n"
+"X-Generator: FlyRec POT Generator\n"
+
+#: front-page.php:567
+msgid "+381 60 000 0000"
+msgstr ""
+
+#: front-page.php:445
+msgid "Admin: Dodajte video radove kroz <strong>%s</strong> u WordPress adminu."
+msgstr ""
+
+#: front-page.php:275
+msgid "Aerial fotografije i video prezentacije stanova, kuća i poslovnih objekata iz perspektive neba koja ubrzava prodaju i impresionira kupce."
+msgstr ""
+
+#: front-page.php:409
+msgid "Aerial snimanje nekretnina – Beograd"
+msgstr ""
+
+#: footer.php:112
+msgid "Beograd, Srbija"
+msgstr ""
+
+#: functions.php:288
+msgid "Bijeli logo (hero / dark tema)"
+msgstr ""
+
+#: front-page.php:562
+msgid "Broj telefona"
+msgstr ""
+
+#: functions.php:352
+msgid "Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam."
+msgstr ""
+
+#: front-page.php:410
+msgid "Cinematic prikazivanje luksuznih stanova i kompleksa iz vazduha."
+msgstr ""
+
+#: footer.php:19
+msgid "Cinematic snimanje dronom."
+msgstr ""
+
+#: front-page.php:296
+msgid "Cinematic snimanje najvažnijih životnih trenutaka iz perspektive neba. Prelepi aerial kadrovi lokacije, gostiju i svakog detalja koji čini dan nezaboravnim."
+msgstr ""
+
+#: functions.php:469
+#: functions.php:626
+msgid "Datum"
+msgstr ""
+
+#: functions.php:93
+msgid "Dodaj novi snimak"
+msgstr ""
+
+#: functions.php:120
+msgid "Dodaj novu portfolio stavku"
+msgstr ""
+
+#: functions.php:119
+msgid "Dodaj sliku/video"
+msgstr ""
+
+#: functions.php:92
+msgid "Dodaj snimak"
+msgstr ""
+
+#: functions.php:358
+msgid "Dugme 1 – Tekst"
+msgstr ""
+
+#: functions.php:363
+msgid "Dugme 2 – Tekst"
+msgstr ""
+
+#: functions.php:390
+#: front-page.php:495
+msgid "Email"
+msgstr ""
+
+#: front-page.php:549
+msgid "Email adresa"
+msgstr ""
+
+#: footer.php:35
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:12
+msgid "FlyRec"
+msgstr ""
+
+#: header.php:41
+#: header.php:59
+msgid "FlyRec – Početna"
+msgstr ""
+
+#: functions.php:25
+msgid "Footer Navigacija"
+msgstr ""
+
+#: front-page.php:613
+msgid "Galerija prikaz"
+msgstr ""
+
+#: functions.php:348
+msgid "Glavni naslov"
+msgstr ""
+
+#: functions.php:441
+msgid "Greška pri slanju. Kontaktirajte nas direktno na email."
+msgstr ""
+
+#: front-page.php:465
+msgid "Hajde da sarađujemo"
+msgstr ""
+
+#: functions.php:334
+msgid "Hero slika"
+msgstr ""
+
+#: functions.php:342
+msgid "Hero video URL (MP4 iz Media Library)"
+msgstr ""
+
+#: functions.php:439
+msgid "Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro."
+msgstr ""
+
+#: front-page.php:538
+msgid "Ime i prezime"
+msgstr ""
+
+#: footer.php:64
+msgid "Inspekcije objekata"
+msgstr ""
+
+#: footer.php:22
+#: front-page.php:510
+msgid "Instagram"
+msgstr ""
+
+#: functions.php:391
+msgid "Instagram URL"
+msgstr ""
+
+#: functions.php:625
+msgid "Klik"
+msgstr ""
+
+#: header.php:81
+#: header.php:123
+#: footer.php:52
+#: footer.php:70
+msgid "Kontakt"
+msgstr ""
+
+#: functions.php:392
+#: front-page.php:524
+msgid "Lokacija"
+msgstr ""
+
+#: functions.php:421
+msgid "Molimo popunite sva obavezna polja."
+msgstr ""
+
+#: functions.php:465
+msgid "Naslov"
+msgstr ""
+
+#: footer.php:45
+msgid "Navigacija"
+msgstr ""
+
+#: front-page.php:248
+msgid "Naše usluge"
+msgstr ""
+
+#: front-page.php:333
+msgid "Naši projekti"
+msgstr ""
+
+#: index.php:16
+msgid "Nema sadržaja."
+msgstr ""
+
+#: functions.php:98
+msgid "Nema snimaka"
+msgstr ""
+
+#: functions.php:99
+msgid "Nema snimaka u korpi"
+msgstr ""
+
+#: front-page.php:415
+msgid "Nezaboravni trenutci snimljeni iz ptičje perspektive."
+msgstr ""
+
+#: functions.php:95
+msgid "Novi snimak"
+msgstr ""
+
+#: functions.php:430
+msgid "Novi upit – %s"
+msgstr ""
+
+#: front-page.php:578
+msgid "Opišite vaš projekat, lokaciju, željeni termin snimanja..."
+msgstr ""
+
+#: header.php:109
+msgid "Otvori meni"
+msgstr ""
+
+#: functions.php:289
+msgid "PNG sa bijelim/svijetlim tekstom. Prikazuje se na transparentnom headeru i u tamnoj temi."
+msgstr ""
+
+#: functions.php:301
+msgid "PNG sa tamnim tekstom. Prikazuje se kada korisnik skroluje u svijetloj temi."
+msgstr ""
+
+#: functions.php:467
+msgid "Platforma"
+msgstr ""
+
+#: functions.php:353
+msgid "Podnaslov"
+msgstr ""
+
+#: functions.php:357
+msgid "Pogledaj radove"
+msgstr ""
+
+#: functions.php:96
+msgid "Pogledaj snimak"
+msgstr ""
+
+#: front-page.php:336
+msgid "Pogledajte neke od naših najnovijih produkcija. Svaki kadar je pažljivo isplaniran i profesionalno montiran."
+msgstr ""
+
+#: front-page.php:374
+msgid "Pokreni video"
+msgstr ""
+
+#: front-page.php:135
+msgid "Pokreni video: "
+msgstr ""
+
+#: header.php:80
+#: header.php:122
+#: footer.php:51
+msgid "Portfolio"
+msgstr ""
+
+#: functions.php:117
+msgid "Portfolio Galerija"
+msgstr ""
+
+#: functions.php:118
+msgid "Portfolio stavka"
+msgstr ""
+
+#: functions.php:279
+msgid "Postavi bijeli logo za hero/tamnu pozadinu i tamni logo za bijeli header nakon skrola."
+msgstr ""
+
+#: front-page.php:135
+msgid "Povećaj: "
+msgstr ""
+
+#: front-page.php:589
+msgid "Pošalji upit"
+msgstr ""
+
+#: functions.php:97
+msgid "Pretraži snimke"
+msgstr ""
+
+#: header.php:89
+msgid "Pređi na svetlu temu"
+msgstr ""
+
+#: functions.php:335
+msgid "Prikazuje se samo kada je tip pozadine \"Slika\". Preporučena veličina: 1920×1080px."
+msgstr ""
+
+#: functions.php:24
+msgid "Primarna Navigacija"
+msgstr ""
+
+#: header.php:76
+msgid "Primarna navigacija"
+msgstr ""
+
+#: footer.php:50
+msgid "Proces rada"
+msgstr ""
+
+#: front-page.php:65
+msgid "Profesionalni Drone Studio"
+msgstr ""
+
+#: footer.php:112
+msgid "Profesionalno snimanje dronom"
+msgstr ""
+
+#: functions.php:347
+msgid "Profesionalno snimanje dronom iz vazduha"
+msgstr ""
+
+#: functions.php:622
+msgid "Projekat"
+msgstr ""
+
+#: header.php:90
+#: header.php:127
+#: header.php:127
+msgid "Promeni temu"
+msgstr ""
+
+#: front-page.php:315
+msgid "Promotivni aerial sadržaj za turističke destinacije, hotele i brendove. Spektakularne snimke pejzaža i lokacija koje inspirišu i ostavljaju trajan utisak."
+msgstr ""
+
+#: front-page.php:420
+msgid "Promotivni video za turističku organizaciju planine Kopaonik."
+msgstr ""
+
+#: header.php:79
+#: header.php:121
+msgid "Radovi"
+msgstr ""
+
+#: functions.php:468
+msgid "Redosled"
+msgstr ""
+
+#: front-page.php:177
+msgid "Reel"
+msgstr ""
+
+#: footer.php:63
+msgid "Sadržaj za socijalne mreže"
+msgstr ""
+
+#: front-page.php:87
+msgid "Skroluj"
+msgstr ""
+
+#: front-page.php:593
+msgid "Slanje..."
+msgstr ""
+
+#: functions.php:91
+msgid "Snimak"
+msgstr ""
+
+#: footer.php:60
+#: front-page.php:273
+msgid "Snimanje nekretnina"
+msgstr ""
+
+#: footer.php:61
+msgid "Snimanje venčanja"
+msgstr ""
+
+#: functions.php:90
+msgid "Snimci"
+msgstr ""
+
+#: front-page.php:250
+msgid "Specijalizovani smo za sve vrste aerial snimanja dronom, od komercijalnih projekata do ličnih eventi."
+msgstr ""
+
+#: front-page.php:467
+msgid "Spreman za snimanje"
+msgstr ""
+
+#: footer.php:109
+msgid "Sva prava zadržana."
+msgstr ""
+
+#: front-page.php:470
+msgid "Svaki projekat je jedinstven. Pišite nam i zajednički ćemo kreirati nešto što će ostaviti utisak."
+msgstr ""
+
+#: header.php:143
+msgid "Svetla tema"
+msgstr ""
+
+#: functions.php:300
+msgid "Tamni logo (bijeli header / light tema)"
+msgstr ""
+
+#: functions.php:389
+#: front-page.php:481
+msgid "Telefon"
+msgstr ""
+
+#: functions.php:466
+#: functions.php:623
+msgid "Thumbnail"
+msgstr ""
+
+#: functions.php:319
+msgid "Tip pozadine"
+msgstr ""
+
+#: front-page.php:313
+msgid "Turistički i promotivni video"
+msgstr ""
+
+#: front-page.php:419
+msgid "Turistički promo – Kopaonik"
+msgstr ""
+
+#: footer.php:62
+msgid "Turistički video"
+msgstr ""
+
+#: functions.php:425
+msgid "Unesite ispravnu email adresu."
+msgstr ""
+
+#: functions.php:344
+msgid "Upload MP4 u Media Library → kopiraj URL ovde. Prikazuje se samo kada je tip pozadine \"Video\"."
+msgstr ""
+
+#: functions.php:94
+msgid "Uredi snimak"
+msgstr ""
+
+#: functions.php:121
+msgid "Uredi stavku"
+msgstr ""
+
+#: header.php:78
+#: header.php:120
+#: footer.php:47
+#: footer.php:58
+msgid "Usluge"
+msgstr ""
+
+#: footer.php:19
+msgid "Vaš svet iz nove perspektive."
+msgstr ""
+
+#: front-page.php:573
+msgid "Vaša poruka"
+msgstr ""
+
+#: front-page.php:543
+msgid "Vaše ime i prezime"
+msgstr ""
+
+#: front-page.php:294
+msgid "Venčanja i eventi"
+msgstr ""
+
+#: front-page.php:414
+msgid "Venčanje na Fruškoj gori – Highlight"
+msgstr ""
+
+#: front-page.php:181
+msgid "Video"
+msgstr ""
+
+#: footer.php:48
+#: front-page.php:334
+msgid "Video radovi"
+msgstr ""
+
+#: functions.php:624
+msgid "Video tip"
+msgstr ""
+
+#: front-page.php:231
+msgid "Više na Instagramu"
+msgstr ""
+
+#: footer.php:29
+msgid "YouTube"
+msgstr ""
+
+#: functions.php:362
+msgid "Zakaži snimanje"
+msgstr ""
+
+#: front-page.php:614
+msgid "Zatvori"
+msgstr ""
+
+#: footer.php:49
+msgid "Zašto mi"
+msgstr ""
+
+#: front-page.php:467
+msgid "iz nove perspektive?"
+msgstr ""
+
+#: front-page.php:247
+msgid "Šta nudimo"
+msgstr ""
+
+#: functions.php:308
+msgid "🎬 Hero Sekcija"
+msgstr ""
+
+#: functions.php:323
+msgid "🎬 Video (MP4)"
+msgstr ""
+
+#: functions.php:496
+msgid "🎬 Video / Link podešavanja"
+msgstr ""
+
+#: functions.php:100
+msgid "🎬 Video Radovi"
+msgstr ""
+
+#: functions.php:384
+msgid "📞 Kontakt Informacije"
+msgstr ""
+
+#: functions.php:147
+msgid "📹 Detalji snimka"
+msgstr ""
+
+#: functions.php:277
+msgid "🖼 Logo Slike"
+msgstr ""
+
+#: functions.php:122
+msgid "🖼 Portfolio"
+msgstr ""
+
+#: functions.php:324
+msgid "🖼 Slika"
+msgstr ""
+
