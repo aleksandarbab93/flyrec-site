@@ -402,6 +402,27 @@ h1, h2, h3, h4 {
     object-position: center;
 }
 
+/* YouTube video pozadina (autoplay, loop, bez kontrola) */
+.hero-youtube-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none; /* sprečava klik/interakciju sa YouTube plejerom */
+}
+
+.hero-youtube-wrapper iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;   /* 16:9 */
+    min-height: 100%;
+    min-width: 177.78vh; /* 16:9 */
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
 /* Slika pozadina */
 .hero-image-wrapper {
     position: absolute;

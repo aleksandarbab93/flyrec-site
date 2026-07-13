@@ -290,6 +290,30 @@ function flyrec_get_embed_url( $url, $type = 'youtube' ) {
 }
 
 // =============================================
+// HELPER: YOUTUBE EMBED ZA HERO POZADINU (autoplay, loop, bez kontrola)
+// =============================================
+function flyrec_get_hero_youtube_embed( $url ) {
+    if ( ! preg_match( '/(?:v=|youtu\.be\/|\/embed\/|\/shorts\/)([a-zA-Z0-9_-]{11})/', $url, $m ) ) {
+        return '';
+    }
+    $id = $m[1];
+    return 'https://www.youtube.com/embed/' . $id . '?' . http_build_query( [
+        'autoplay'       => 1,
+        'mute'           => 1,
+        'loop'           => 1,
+        'playlist'       => $id, // potrebno da bi loop=1 radio za jedan video
+        'controls'       => 0,
+        'showinfo'       => 0,
+        'rel'            => 0,
+        'modestbranding' => 1,
+        'iv_load_policy' => 3,
+        'disablekb'      => 1,
+        'playsinline'    => 1,
+        'enablejsapi'    => 0,
+    ] );
+}
+
+// =============================================
 // WORDPRESS CUSTOMIZER
 // =============================================
 function flyrec_customize_register( $wp_customize ) {
@@ -362,9 +386,9 @@ function flyrec_customize_register( $wp_customize ) {
     $hero_settings = [
         'flyrec_hero_video_url' => [
             'default' => '',
-            'label'   => __( 'Hero video URL (MP4 iz Media Library)', 'flyrec' ),
+            'label'   => __( 'Hero video URL (MP4 iz Media Library ili YouTube link)', 'flyrec' ),
             'type'    => 'url',
-            'desc'    => __( 'Upload MP4 u Media Library → kopiraj URL ovde. Prikazuje se samo kada je tip pozadine "Video".', 'flyrec' ),
+            'desc'    => __( 'Nalepi MP4 URL iz Media Library ili YouTube link (npr. https://www.youtube.com/watch?v=XXXXXXXXXXX). Video ide u loop, bez zvuka i bez YouTube kontrola. Ako ostane prazno, prikazuje se Hero slika.', 'flyrec' ),
         ],
         'flyrec_hero_title' => [
             'default' => __( 'Profesionalno snimanje dronom iz vazduha', 'flyrec' ),

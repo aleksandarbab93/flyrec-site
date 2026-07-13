@@ -11,6 +11,11 @@ get_header();
 $hero_bg_type  = get_theme_mod('flyrec_hero_bg_type',    'video');
 $hero_video    = get_theme_mod('flyrec_hero_video_url',  '');
 $hero_image    = get_theme_mod('flyrec_hero_image_url',  '');
+
+// Video ima prioritet ako je postavljen; ako nema videa, koristi se slika (fallback)
+$hero_video_type = $hero_video ? flyrec_detect_video_type($hero_video) : '';
+$show_hero_video = ($hero_bg_type !== 'image' && $hero_video);
+$show_hero_image = (!$show_hero_video && $hero_image);
 $hero_title    = get_theme_mod('flyrec_hero_title',      'Profesionalno snimanje dronom iz vazduha');
 $hero_subtitle = get_theme_mod('flyrec_hero_subtitle',   'Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam.');
 $cta1_text     = get_theme_mod('flyrec_cta1_text',       'Pogledaj radove');
@@ -29,17 +34,30 @@ $contact_loc   = get_theme_mod('flyrec_contact_location',  'Beograd, Srbija');
          ========================================= -->
     <section class="hero" id="hero">
 
-        <!-- Pozadina: video ili slika (podesi u Customizer → Hero Sekcija) -->
-        <?php if ($hero_bg_type === 'image' && $hero_image) : ?>
-            <div class="hero-image-wrapper" aria-hidden="true">
-                <img
-                    src="<?php echo esc_url($hero_image); ?>"
-                    alt=""
-                    class="hero-image"
-                    loading="eager"
-                    decoding="async">
-            </div>
-        <?php elseif ($hero_bg_type !== 'image' && $hero_video) : ?>
+        <!-- Pozadina: video (MP4 ili YouTube) ili slika (podesi u Customizer → Hero Sekcija) -->
+        <?php if ($show_hero_video && $hero_video_type === 'youtube') :
+            $hero_youtube_embed = flyrec_get_hero_youtube_embed($hero_video);
+            if ($hero_youtube_embed) : ?>
+                <div class="hero-youtube-wrapper" aria-hidden="true">
+                    <iframe
+                        src="<?php echo esc_url($hero_youtube_embed); ?>"
+                        title=""
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        tabindex="-1"
+                        aria-hidden="true"></iframe>
+                </div>
+            <?php elseif ($hero_image) : ?>
+                <div class="hero-image-wrapper" aria-hidden="true">
+                    <img
+                        src="<?php echo esc_url($hero_image); ?>"
+                        alt=""
+                        class="hero-image"
+                        loading="eager"
+                        decoding="async">
+                </div>
+            <?php endif;
+        elseif ($show_hero_video) : ?>
             <div class="hero-video-wrapper">
                 <video
                     class="hero-video"
@@ -51,6 +69,15 @@ $contact_loc   = get_theme_mod('flyrec_contact_location',  'Beograd, Srbija');
                     aria-hidden="true">
                     <source src="<?php echo esc_url($hero_video); ?>" type="video/mp4">
                 </video>
+            </div>
+        <?php elseif ($show_hero_image) : ?>
+            <div class="hero-image-wrapper" aria-hidden="true">
+                <img
+                    src="<?php echo esc_url($hero_image); ?>"
+                    alt=""
+                    class="hero-image"
+                    loading="eager"
+                    decoding="async">
             </div>
         <?php endif; ?>
 
