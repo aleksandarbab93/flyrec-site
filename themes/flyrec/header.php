@@ -43,7 +43,7 @@
                     <img src="<?php echo esc_url( $logo_light ); ?>"
                          alt="FlyRec"
                          class="logo-img"
-                         height="36"
+                         height="26"
                          width="auto"
                          loading="eager">
                 <?php else : ?>
@@ -61,7 +61,7 @@
                     <img src="<?php echo esc_url( $logo_dark ); ?>"
                          alt="FlyRec"
                          class="logo-img"
-                         height="36"
+                         height="26"
                          width="auto"
                          loading="eager">
                 <?php else : ?>

@@ -214,7 +214,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-text {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 800;
     letter-spacing: 0.06em;
     display: flex;
@@ -223,19 +223,19 @@ h1, h2, h3, h4 {
 }
 
 .logo-fly { color: var(--white); }
-.logo-dot { color: var(--accent); font-size: 14px; margin: 0 2px; line-height: 1; }
+.logo-dot { color: var(--accent); font-size: 11px; margin: 0 2px; line-height: 1; }
 .logo-rec { color: var(--white); }
 
 /* WordPress custom logo slika */
 .site-logo .custom-logo {
-    height: 36px;
+    height: 26px;
     width: auto;
     display: block;
 }
 
 /* ── DUAL LOGO – show/hide logika ─────────── */
 .logo-img {
-    height: 36px;
+    height: 26px;
     width: auto;
     display: block;
 }
@@ -415,10 +415,12 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
-    height: 56.25vw;   /* 16:9 */
-    min-height: 100%;
-    min-width: 177.78vh; /* 16:9 */
+    /* Uvećano ~35% preko "cover" veličine da se ivice (gde YouTube
+       ispisuje naslov videa i ime kanala) posjeku van vidljive zone */
+    width: 135vw;
+    height: 75.94vw;    /* 56.25vw * 1.35, 16:9 */
+    min-height: 135%;
+    min-width: 240.05vh; /* 177.78vh * 1.35, 16:9 */
     transform: translate(-50%, -50%);
     border: none;
 }
