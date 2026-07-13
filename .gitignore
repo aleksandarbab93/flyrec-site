@@ -3,6 +3,7 @@
 
 # ...osim ovoga sto pratimo:
 !/.gitignore
+!/.github/
 !/themes/
 /themes/*
 !/themes/flyrec/

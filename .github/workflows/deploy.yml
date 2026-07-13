@@ -1,0 +1,19 @@
+name: Deploy to production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH pull on server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          # Serverski kljuc ima forced command (~/.ssh/authorized_keys) koji uvek
+          # izvrsava "git pull origin main" u wp-content repou, bez obzira sta se posalje ovde.
+          script: echo "deploying"
