@@ -16,15 +16,18 @@ $hero_image    = get_theme_mod('flyrec_hero_image_url',  '');
 $hero_video_type = $hero_video ? flyrec_detect_video_type($hero_video) : '';
 $show_hero_video = ($hero_bg_type !== 'image' && $hero_video);
 $show_hero_image = (!$show_hero_video && $hero_image);
-$hero_title    = get_theme_mod('flyrec_hero_title',      'Profesionalno snimanje dronom iz vazduha');
-$hero_subtitle = get_theme_mod('flyrec_hero_subtitle',   'Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam.');
-$cta1_text     = get_theme_mod('flyrec_cta1_text',       'Pogledaj radove');
-$cta2_text     = get_theme_mod('flyrec_cta2_text',       'Zakaži snimanje');
+
+// Hero naslov/podnaslov/dugmad + naziv lokacije zavise od jezika – vidi functions.php
+$i18n_content  = flyrec_get_i18n_content();
+$hero_title    = $i18n_content['hero_title'];
+$hero_subtitle = $i18n_content['hero_subtitle'];
+$cta1_text     = $i18n_content['cta1_text'];
+$cta2_text     = $i18n_content['cta2_text'];
 
 $contact_phone = get_theme_mod('flyrec_contact_phone',     '+381 60 000 0000');
 $contact_email = get_theme_mod('flyrec_contact_email',     'info@flyrec.rs');
 $contact_ig    = get_theme_mod('flyrec_contact_instagram', 'https://instagram.com/flyrec');
-$contact_loc   = get_theme_mod('flyrec_contact_location',  'Beograd, Srbija');
+$contact_loc   = $i18n_content['location'];
 ?>
 
 <main id="mainContent">

@@ -31,6 +31,7 @@ class Fig_Block {
             FIG_VERSION,
             true
         );
+        wp_set_script_translations( 'fig-block-editor', 'flyrec-instagram-feed', FIG_DIR . 'languages' );
 
         register_block_type( self::NAME, [
             'editor_script'   => 'fig-block-editor',

@@ -1606,6 +1606,126 @@ a.contact-value:hover { color: var(--accent); }
 }
 
 /* =============================================
+   JEZIČKI SVIČ (Polylang) – dugme + dropdown lista
+   ============================================= */
+.lang-switcher {
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+.lang-switcher-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+    padding: 0 12px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.lang-switcher-toggle:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.lang-switcher-toggle svg {
+    transition: transform var(--transition);
+}
+
+.lang-switcher.open .lang-switcher-toggle svg {
+    transform: rotate(180deg);
+}
+
+.lang-switcher-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 140px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+    z-index: 1001;
+}
+
+.lang-switcher.open .lang-switcher-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-switcher-item {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: background var(--transition), color var(--transition);
+}
+
+.lang-switcher-item:hover,
+.lang-switcher-item:focus {
+    background: var(--bg-card-hover);
+    color: var(--accent);
+}
+
+.lang-switcher-item.is-active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+[data-theme="light"] .lang-switcher-toggle {
+    background: rgba(0,0,0,0.05);
+    border-color: var(--border);
+    color: var(--text-secondary);
+}
+
+[data-theme="light"] .lang-switcher-toggle:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+/* Mobilni meni – lista jezika ispod glavnih linkova */
+.mobile-lang-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 24px 0;
+}
+
+.mobile-lang-link {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all var(--transition);
+}
+
+.mobile-lang-link:hover,
+.mobile-lang-link.is-active {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* =============================================
    SMOOTH TRANSITION PRI PROMENI TEME
    Klasa se dodaje/sklanja JS-om samo dok traje promena
    ============================================= */
@@ -1821,6 +1941,18 @@ a.contact-value:hover { color: var(--accent); }
     color: #ffffff;
 }
 
+/* Lang switcher → svijetli stil (isti obrazac kao theme toggle) */
+[data-theme="light"] .site-header:not(.scrolled) .lang-switcher-toggle {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+}
+[data-theme="light"] .site-header:not(.scrolled) .lang-switcher-toggle:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+}
+
 /* Tekst fallback logo → bijeli na transparentnom headeru */
 [data-theme="light"] .site-header:not(.scrolled) .logo-version--light .logo-fly,
 [data-theme="light"] .site-header:not(.scrolled) .logo-version--light .logo-rec {
@@ -1836,6 +1968,11 @@ a.contact-value:hover { color: var(--accent); }
 }
 [data-theme="light"] .site-header.scrolled .hamburger span { background: #111111; }
 [data-theme="light"] .site-header.scrolled .theme-toggle   {
+    background: rgba(0,0,0,0.05);
+    border-color: var(--border);
+    color: var(--text-secondary);
+}
+[data-theme="light"] .site-header.scrolled .lang-switcher-toggle {
     background: rgba(0,0,0,0.05);
     border-color: var(--border);
     color: var(--text-secondary);

@@ -83,6 +83,49 @@
             </ul>
         </nav>
 
+        <?php if ( function_exists( 'pll_the_languages' ) ) :
+            $pll_languages = pll_the_languages( [ 'raw' => 1, 'hide_if_empty' => 0 ] );
+            if ( $pll_languages ) :
+                $pll_current = wp_list_filter( $pll_languages, [ 'current_lang' => true ] );
+                $pll_current = $pll_current ? reset( $pll_current ) : reset( $pll_languages );
+        ?>
+        <!-- Jezički svič – Polylang -->
+        <div class="lang-switcher" id="langSwitcher">
+            <button
+                type="button"
+                class="lang-switcher-toggle"
+                id="langSwitcherToggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-label="<?php esc_attr_e( 'Izaberi jezik', 'flyrec' ); ?>"
+            >
+                <span class="lang-switcher-current"><?php echo esc_html( strtoupper( $pll_current['slug'] ) ); ?></span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </button>
+            <ul class="lang-switcher-menu" id="langSwitcherMenu" role="menu" aria-hidden="true">
+                <?php foreach ( $pll_languages as $lang ) :
+                    // "Čist" URL jezika (npr. /en/, /ru/) umesto slug-a prevedene stranice.
+                    $lang_url = ( is_front_page() && function_exists( 'PLL' ) && ! empty( PLL()->links_model ) )
+                        ? PLL()->links_model->home_url( $lang['slug'] )
+                        : $lang['url'];
+                ?>
+                    <li role="none">
+                        <a
+                            role="menuitem"
+                            href="<?php echo esc_url( $lang_url ); ?>"
+                            lang="<?php echo esc_attr( $lang['slug'] ); ?>"
+                            class="lang-switcher-item<?php echo $lang['current_lang'] ? ' is-active' : ''; ?>"
+                        >
+                            <?php echo esc_html( $lang['name'] ); ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <?php endif; endif; ?>
+
         <!-- Theme switcher – sun/moon ikona -->
         <button
             class="theme-toggle"
@@ -124,6 +167,26 @@
             <li><a href="#o-nama"  class="mobile-nav-link"><?php esc_html_e( 'O nama',  'flyrec' ); ?></a></li>
             <li><a href="#kontakt" class="mobile-nav-link mobile-nav-link--cta"><?php esc_html_e( 'Kontakt', 'flyrec' ); ?></a></li>
         </ul>
+
+        <?php if ( function_exists( 'pll_the_languages' ) && $pll_languages ) : ?>
+            <ul class="mobile-lang-list">
+                <?php foreach ( $pll_languages as $lang ) :
+                    $lang_url = ( is_front_page() && function_exists( 'PLL' ) && ! empty( PLL()->links_model ) )
+                        ? PLL()->links_model->home_url( $lang['slug'] )
+                        : $lang['url'];
+                ?>
+                    <li>
+                        <a
+                            href="<?php echo esc_url( $lang_url ); ?>"
+                            lang="<?php echo esc_attr( $lang['slug'] ); ?>"
+                            class="mobile-lang-link<?php echo $lang['current_lang'] ? ' is-active' : ''; ?>"
+                        >
+                            <?php echo esc_html( $lang['name'] ); ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
     </nav>
 </header>
 <!-- /NAVIGACIJA -->

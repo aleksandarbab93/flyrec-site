@@ -1,0 +1,60 @@
+{
+    "translation-revision-date": "2026-07-14 08:39:01+0000",
+    "generator": "Flyrec Translation Builder",
+    "source": "blocks/instagram-feed/block.js",
+    "domain": "flyrec-instagram-feed",
+    "locale_data": {
+        "flyrec-instagram-feed": {
+            "": {
+                "domain": "flyrec-instagram-feed",
+                "lang": "ru_RU",
+                "plural-forms": "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);"
+            },
+            "Broj kolona": [
+                "Количество колонок"
+            ],
+            "Broj objava": [
+                "Количество публикаций"
+            ],
+            "Carousel": [
+                "Карусель"
+            ],
+            "Direktan link ka Instagramu": [
+                "Прямая ссылка на Instagram"
+            ],
+            "Flyrec Instagram Feed": [
+                "Flyrec Instagram Feed"
+            ],
+            "Fotografije": [
+                "Фотографии"
+            ],
+            "Klik na objavu": [
+                "Клик по публикации"
+            ],
+            "Podešavanja feed-a": [
+                "Настройки ленты"
+            ],
+            "Popup sa Instagram embed-om": [
+                "Всплывающее окно со встроенным Instagram"
+            ],
+            "Popup/lightbox": [
+                "Popup/lightbox"
+            ],
+            "Prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa povezanog naloga.": [
+                "Отображает последние публикации Instagram (Reels, видео, фото, карусель) с подключённого аккаунта."
+            ],
+            "Reels": [
+                "Reels"
+            ],
+            "Sve": [
+                "Все"
+            ],
+            "Tip sadržaja": [
+                "Тип содержимого"
+            ],
+            "Video": [
+                "Видео"
+            ]
+        }
+    }
+}

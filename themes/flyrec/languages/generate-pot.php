@@ -41,6 +41,9 @@ foreach ( $php_files as $file ) {
     }
 }
 
+// Theme header stringovi (style.css) - WP prevodi ove preko istog text domaina.
+$strings['Premium WordPress landing page tema za profesionalno snimanje dronom. Cinematic, dark, responzivna.'][] = 'style.css:6';
+
 ksort( $strings );
 
 $pot  = "# FlyRec WordPress Theme\n";

@@ -1,592 +1,426 @@
-# FlyRec WordPress Theme
-# Copyright (C) 2026 FlyRec Studio
-# This file is distributed under the same license as the FlyRec theme.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: FlyRec 1.0.0\n"
-"Report-Msgid-Bugs-To: info@flyrec.rs\n"
-"POT-Creation-Date: 2026-07-14 08:50+0000\n"
+"Project-Id-Version: 1.0.0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr_RS\n"
-"X-Generator: FlyRec POT Generator\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: footer.php:112
 msgid "Beograd, Srbija"
-msgstr ""
+msgstr "Belgrade, Serbia"
 
-#: functions.php:352
 msgid "Bijeli logo (hero / dark tema)"
-msgstr ""
+msgstr "White logo (hero / dark theme)"
 
-#: front-page.php:374
 msgid "Broj telefona"
-msgstr ""
+msgstr "Phone number"
 
-#: functions.php:416
 msgid "Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam."
-msgstr ""
+msgstr "Cinematic aerial video, photography and production for brands, events, real estate and tourism."
 
-#: footer.php:19
 msgid "Cinematic snimanje dronom."
-msgstr ""
+msgstr "Cinematic drone filming."
 
-#: functions.php:537
 msgid "Datum"
-msgstr ""
+msgstr "Date"
 
-#: functions.php:145
 msgid "Dodaj novi snimak"
-msgstr ""
+msgstr "Add new video"
 
-#: functions.php:144
 msgid "Dodaj snimak"
-msgstr ""
+msgstr "Add video"
 
-#: front-page.php:176
 msgid "Događaji"
-msgstr ""
+msgstr "Events"
 
-#: front-page.php:385
 msgid "Drugo"
-msgstr ""
+msgstr "Other"
 
-#: functions.php:422
 msgid "Dugme 1 – Tekst"
-msgstr ""
+msgstr "Button 1 – Text"
 
-#: functions.php:427
 msgid "Dugme 2 – Tekst"
-msgstr ""
+msgstr "Button 2 – Text"
 
-#: functions.php:454
-#: front-page.php:308
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
-#: front-page.php:367
 msgid "Email adresa"
-msgstr ""
+msgstr "Email address"
 
-#: footer.php:35
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
-#: front-page.php:219
 msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija."
-msgstr ""
+msgstr "Cinematic video and photography of nature, tourist locations and various destinations."
 
-#: footer.php:12
 msgid "FlyRec"
-msgstr ""
+msgstr "FlyRec"
 
-#: functions.php:520
 msgid "FlyRec Podešavanja"
-msgstr ""
+msgstr "FlyRec Settings"
 
-#: functions.php:521
 msgid "FlyRec Settings"
-msgstr ""
+msgstr "FlyRec Settings"
 
-#: header.php:41
-#: header.php:59
 msgid "FlyRec – Početna"
-msgstr ""
+msgstr "FlyRec – Home"
 
-#: front-page.php:260
 msgid "Flyrec kroz fotografiju i video pretvara trenutke, prostore i pejzaže u vizuelne priče. Fokusirani smo na kvalitet, kreativnost i sadržaj prilagođen savremenim digitalnim platformama."
-msgstr ""
+msgstr "Flyrec turns moments, spaces and landscapes into visual stories through photography and video. We focus on quality, creativity and content tailored to modern digital platforms."
 
-#: functions.php:69
 msgid "Footer Navigacija"
-msgstr ""
+msgstr "Footer Navigation"
 
-#: front-page.php:381
 msgid "Fotografisanje događaja"
-msgstr ""
+msgstr "Event photography"
 
-#: front-page.php:383
 msgid "Fotografisanje nekretnina"
-msgstr ""
+msgstr "Real estate photography"
 
-#: front-page.php:415
 msgid "Galerija prikaz"
-msgstr ""
+msgstr "Gallery view"
 
-#: functions.php:412
 msgid "Glavni naslov"
-msgstr ""
+msgstr "Main title"
 
-#: functions.php:509
 msgid "Greška pri slanju. Kontaktirajte nas direktno na email."
-msgstr ""
+msgstr "Error sending. Please contact us directly by email."
 
-#: functions.php:128
 msgid "Greška pri slanju. Pokušajte ponovo."
-msgstr ""
+msgstr "Error sending. Please try again."
 
-#: front-page.php:278
 msgid "Hajde da sarađujemo"
-msgstr ""
+msgstr "Let's work together"
 
-#: functions.php:398
 msgid "Hero slika"
-msgstr ""
+msgstr "Hero image"
 
-#: functions.php:406
 msgid "Hero video URL (MP4 iz Media Library ili YouTube link)"
-msgstr ""
+msgstr "Hero video URL (MP4 from Media Library or YouTube link)"
 
-#: functions.php:507
 msgid "Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro."
-msgstr ""
+msgstr "Thank you! Your message has been sent successfully. We'll get back to you soon."
 
-#: front-page.php:363
 msgid "Ime i prezime"
-msgstr ""
+msgstr "Full name"
 
-#: footer.php:64
 msgid "Inspekcije objekata"
-msgstr ""
+msgstr "Property inspections"
 
-#: footer.php:22
-#: front-page.php:323
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
-#: functions.php:455
 msgid "Instagram URL"
-msgstr ""
+msgstr "Instagram URL"
 
-#: front-page.php:130
 msgid "Iz vazduha"
-msgstr ""
+msgstr "From above"
 
-#: header.php:100
 msgid "Izaberi jezik"
-msgstr ""
+msgstr "Select language"
 
-#: front-page.php:133
 msgid "Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha."
-msgstr ""
+msgstr "A selection of our latest footage and moments captured from above."
 
-#: front-page.php:257
 msgid "Ko smo mi"
-msgstr ""
+msgstr "Who we are"
 
-#: header.php:82
-#: header.php:163
-#: footer.php:52
-#: footer.php:70
 msgid "Kontakt"
-msgstr ""
+msgstr "Contact"
 
-#: functions.php:456
-#: front-page.php:337
 msgid "Lokacija"
-msgstr ""
+msgstr "Location"
 
-#: functions.php:237
 msgid "Manji broj = prikazuje se pre ostalih."
-msgstr ""
+msgstr "Lower number = displayed before others."
 
-#: functions.php:486
 msgid "Molimo popunite sva obavezna polja."
-msgstr ""
+msgstr "Please fill in all required fields."
 
-#: front-page.php:238
 msgid "Montaža i obrada"
-msgstr ""
+msgstr "Editing & post-production"
 
-#: front-page.php:240
 msgid "Montiranje promotivnih videa i obrada snimljenog materijala — od sirovog snimka do gotovog proizvoda spremnog za objavu."
-msgstr ""
+msgstr "Editing promotional videos and processing footage — from raw material to a finished product ready for publishing."
 
-#: functions.php:129
 msgid "Mrežna greška. Proverite konekciju i pokušajte ponovo."
-msgstr ""
+msgstr "Network error. Please check your connection and try again."
 
-#: front-page.php:131
 msgid "Najnoviji snimci"
-msgstr ""
+msgstr "Latest footage"
 
-#: functions.php:408
 msgid "Nalepi MP4 URL iz Media Library ili YouTube link (npr. https://www.youtube.com/watch?v=XXXXXXXXXXX). Video ide u loop, bez zvuka i bez YouTube kontrola. Ako ostane prazno, prikazuje se Hero slika."
-msgstr ""
+msgstr "Paste an MP4 URL from the Media Library or a YouTube link (e.g. https://www.youtube.com/watch?v=XXXXXXXXXXX). The video plays on loop, muted, without YouTube controls. If left empty, the Hero image is shown instead."
 
-#: functions.php:246
-#: functions.php:533
 msgid "Naslov"
-msgstr ""
+msgstr "Title"
 
-#: footer.php:45
 msgid "Navigacija"
-msgstr ""
+msgstr "Navigation"
 
-#: front-page.php:152
 msgid "Naše usluge"
-msgstr ""
+msgstr "Our services"
 
-#: front-page.php:198
 msgid "Nekretnine"
-msgstr ""
+msgstr "Real estate"
 
-#: functions.php:545
 msgid "Nema"
-msgstr ""
+msgstr "None"
 
-#: index.php:16
 msgid "Nema sadržaja."
-msgstr ""
+msgstr "No content."
 
-#: functions.php:150
 msgid "Nema snimaka"
-msgstr ""
+msgstr "No videos"
 
-#: functions.php:151
 msgid "Nema snimaka u korpi"
-msgstr ""
+msgstr "No videos in trash"
 
-#: functions.php:147
 msgid "Novi snimak"
-msgstr ""
+msgstr "New video"
 
-#: functions.php:495
 msgid "Novi upit – %s"
-msgstr ""
+msgstr "New inquiry – %s"
 
-#: front-page.php:258
 msgid "O Flyrec-u"
-msgstr ""
+msgstr "About Flyrec"
 
-#: header.php:81
-#: header.php:162
-#: footer.php:50
 msgid "O nama"
-msgstr ""
+msgstr "About us"
 
-#: functions.php:250
 msgid "Opis"
-msgstr ""
+msgstr "Description"
 
-#: header.php:148
 msgid "Otvori meni"
-msgstr ""
+msgstr "Open menu"
 
-#: functions.php:353
 msgid "PNG sa bijelim/svijetlim tekstom. Prikazuje se na transparentnom headeru i u tamnoj temi."
-msgstr ""
+msgstr "PNG with white/light text. Shown on the transparent header and in the dark theme."
 
-#: functions.php:365
 msgid "PNG sa tamnim tekstom. Prikazuje se kada korisnik skroluje u svijetloj temi."
-msgstr ""
+msgstr "PNG with dark text. Shown when the user scrolls in the light theme."
 
-#: front-page.php:217
 msgid "Pejzaži"
-msgstr ""
+msgstr "Landscapes"
 
-#: front-page.php:353
 msgid "Piši nam na WhatsApp"
-msgstr ""
+msgstr "Message us on WhatsApp"
 
-#: functions.php:218
-#: functions.php:535
 msgid "Platforma"
-msgstr ""
+msgstr "Platform"
 
-#: functions.php:417
 msgid "Podnaslov"
-msgstr ""
+msgstr "Subtitle"
 
-#: functions.php:421
 msgid "Pogledaj radove"
-msgstr ""
+msgstr "View our work"
 
-#: functions.php:148
 msgid "Pogledaj snimak"
-msgstr ""
+msgstr "View video"
 
-#: footer.php:51
 msgid "Portfolio"
-msgstr ""
+msgstr "Portfolio"
 
-#: front-page.php:391
 msgid "Poruka i dodatne informacije"
-msgstr ""
+msgstr "Message and additional information"
 
-#: functions.php:343
 msgid "Postavi bijeli logo za hero/tamnu pozadinu i tamni logo za bijeli header nakon skrola."
-msgstr ""
+msgstr "Set a white logo for the hero/dark background and a dark logo for the white header after scrolling."
 
-#: header.php:78
-#: header.php:159
-#: footer.php:47
 msgid "Početna"
-msgstr ""
+msgstr "Home"
 
-#: front-page.php:396
 msgid "Pošaljite upit"
-msgstr ""
+msgstr "Send inquiry"
 
-#: style.css:6
 msgid "Premium WordPress landing page tema za profesionalno snimanje dronom. Cinematic, dark, responzivna."
-msgstr ""
+msgstr "Premium WordPress landing page theme for professional drone filming. Cinematic, dark, responsive."
 
-#: functions.php:149
 msgid "Pretraži snimke"
-msgstr ""
+msgstr "Search videos"
 
-#: functions.php:124
-#: header.php:128
 msgid "Pređi na svetlu temu"
-msgstr ""
+msgstr "Switch to light theme"
 
-#: functions.php:125
 msgid "Pređi na tamnu temu"
-msgstr ""
+msgstr "Switch to dark theme"
 
-#: functions.php:399
 msgid "Prikazuje se samo kada je tip pozadine \"Slika\". Preporučena veličina: 1920×1080px."
-msgstr ""
+msgstr "Only shown when the background type is \"Image\". Recommended size: 1920×1080px."
 
-#: functions.php:68
 msgid "Primarna Navigacija"
-msgstr ""
+msgstr "Primary Navigation"
 
-#: header.php:76
 msgid "Primarna navigacija"
-msgstr ""
+msgstr "Primary navigation"
 
-#: front-page.php:200
 msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina."
-msgstr ""
+msgstr "Professional presentation of apartments, houses, business premises and other real estate."
 
-#: front-page.php:91
 msgid "Profesionalni Drone Studio"
-msgstr ""
+msgstr "Professional Drone Studio"
 
-#: footer.php:112
 msgid "Profesionalno snimanje dronom"
-msgstr ""
+msgstr "Professional drone filming"
 
-#: functions.php:411
 msgid "Profesionalno snimanje dronom iz vazduha"
-msgstr ""
+msgstr "Professional aerial drone filming"
 
-#: front-page.php:178
 msgid "Profesionalno snimanje i fotografisanje proslava, poslovnih događaja, manifestacija i posebnih trenutaka — video i fotografije koje prenose atmosferu i najvažnije trenutke."
-msgstr ""
+msgstr "Professional video and photography of celebrations, corporate events, gatherings and special moments — footage that captures the atmosphere and the most important moments."
 
-#: header.php:129
 msgid "Promeni temu"
-msgstr ""
+msgstr "Change theme"
 
-#: header.php:79
-#: header.php:160
 msgid "Radovi"
-msgstr ""
+msgstr "Work"
 
-#: front-page.php:392
 msgid "Recite nam nešto više o projektu..."
-msgstr ""
+msgstr "Tell us more about your project..."
 
-#: functions.php:536
 msgid "Redosled"
-msgstr ""
+msgstr "Order"
 
-#: functions.php:228
 msgid "Redosled prikaza"
-msgstr ""
+msgstr "Display order"
 
-#: footer.php:63
 msgid "Sadržaj za socijalne mreže"
-msgstr ""
+msgstr "Social media content"
 
-#: front-page.php:113
 msgid "Skroluj"
-msgstr ""
+msgstr "Scroll"
 
-#: front-page.php:397
 msgid "Slanje..."
-msgstr ""
+msgstr "Sending..."
 
-#: functions.php:143
 msgid "Snimak"
-msgstr ""
+msgstr "Video"
 
-#: front-page.php:380
 msgid "Snimanje događaja"
-msgstr ""
+msgstr "Event filming"
 
-#: footer.php:60
-#: front-page.php:382
 msgid "Snimanje nekretnina"
-msgstr ""
+msgstr "Real estate filming"
 
-#: front-page.php:384
 msgid "Snimanje pejzaža"
-msgstr ""
+msgstr "Landscape filming"
 
-#: footer.php:61
 msgid "Snimanje venčanja"
-msgstr ""
+msgstr "Wedding filming"
 
-#: functions.php:142
 msgid "Snimci"
-msgstr ""
+msgstr "Videos"
 
-#: front-page.php:154
 msgid "Specijalizovani smo za sve vrste aerial snimanja dronom, od komercijalnih projekata do ličnih eventi."
-msgstr ""
+msgstr "We specialize in all types of aerial drone filming, from commercial projects to personal events."
 
-#: front-page.php:280
 msgid "Spreman za snimanje"
-msgstr ""
+msgstr "Ready to film"
 
-#: footer.php:109
 msgid "Sva prava zadržana."
-msgstr ""
+msgstr "All rights reserved."
 
-#: front-page.php:283
 msgid "Svaki projekat je jedinstven. Pišite nam i zajednički ćemo kreirati nešto što će ostaviti utisak."
-msgstr ""
+msgstr "Every project is unique. Write to us and let's create something memorable together."
 
-#: functions.php:126
 msgid "Svetla tema"
-msgstr ""
+msgstr "Light theme"
 
-#: functions.php:127
 msgid "Tamna tema"
-msgstr ""
+msgstr "Dark theme"
 
-#: functions.php:364
 msgid "Tamni logo (bijeli header / light tema)"
-msgstr ""
+msgstr "Dark logo (white header / light theme)"
 
-#: functions.php:453
-#: front-page.php:294
 msgid "Telefon"
-msgstr ""
+msgstr "Phone"
 
-#: functions.php:254
-#: functions.php:534
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
-#: functions.php:383
 msgid "Tip pozadine"
-msgstr ""
+msgstr "Background type"
 
-#: footer.php:62
 msgid "Turistički video"
-msgstr ""
+msgstr "Tourism video"
 
-#: functions.php:490
 msgid "Unesite ispravnu email adresu."
-msgstr ""
+msgstr "Please enter a valid email address."
 
-#: functions.php:243
 msgid "Uputstvo:"
-msgstr ""
+msgstr "Instructions:"
 
-#: functions.php:146
 msgid "Uredi snimak"
-msgstr ""
+msgstr "Edit video"
 
-#: header.php:80
-#: header.php:161
-#: footer.php:49
-#: footer.php:58
 msgid "Usluge"
-msgstr ""
+msgstr "Services"
 
-#: footer.php:19
 msgid "Vaš svet iz nove perspektive."
-msgstr ""
+msgstr "Your world from a new perspective."
 
-#: front-page.php:364
 msgid "Vaše ime"
-msgstr ""
+msgstr "Your name"
 
-#: functions.php:152
 msgid "Video Radovi"
-msgstr ""
+msgstr "Video Work"
 
-#: functions.php:206
 msgid "Video URL"
-msgstr ""
+msgstr "Video URL"
 
-#: footer.php:48
 msgid "Video radovi"
-msgstr ""
+msgstr "Video work"
 
-#: front-page.php:378
 msgid "Vrsta usluge"
-msgstr ""
+msgstr "Service type"
 
-#: footer.php:29
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
-#: functions.php:256
 msgid "YouTube primer:"
-msgstr ""
+msgstr "YouTube example:"
 
-#: functions.php:214
 msgid "YouTube, Vimeo ili Instagram URL snimka."
-msgstr ""
+msgstr "YouTube, Vimeo or Instagram video URL."
 
-#: functions.php:426
 msgid "Zakaži snimanje"
-msgstr ""
+msgstr "Book a shoot"
 
-#: front-page.php:416
 msgid "Zatvori"
-msgstr ""
+msgstr "Close"
 
-#: front-page.php:280
 msgid "iz nove perspektive?"
-msgstr ""
+msgstr "from a new perspective?"
 
-#: front-page.php:151
 msgid "Šta nudimo"
-msgstr ""
+msgstr "What we offer"
 
-#: functions.php:254
 msgid "• %s — postavi kroz \"Istaknuta slika\" u desnom panelu."
-msgstr ""
+msgstr "• %s — set via \"Featured Image\" in the right panel."
 
-#: functions.php:246
 msgid "• %s — unesi gore u standardno \"Naslov\" polje."
-msgstr ""
+msgstr "• %s — enter above in the standard \"Title\" field."
 
-#: functions.php:250
 msgid "• %s — unesi u \"Sadržaj\" editor ispod."
-msgstr ""
+msgstr "• %s — enter in the \"Content\" editor below."
 
-#: functions.php:372
 msgid "🎬 Hero Sekcija"
-msgstr ""
+msgstr "🎬 Hero Section"
 
-#: functions.php:387
 msgid "🎬 Video (MP4)"
-msgstr ""
+msgstr "🎬 Video (MP4)"
 
-#: functions.php:448
 msgid "📞 Kontakt Informacije"
-msgstr ""
+msgstr "📞 Contact Information"
 
-#: functions.php:178
 msgid "📹 Detalji snimka"
-msgstr ""
+msgstr "📹 Video Details"
 
-#: functions.php:341
 msgid "🖼 Logo Slike"
-msgstr ""
+msgstr "🖼 Logo Images"
 
-#: functions.php:388
 msgid "🖼 Slika"
-msgstr ""
+msgstr "🖼 Image"
 

@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "1. Konekcija sa Instagram nalogom"
+msgstr "1. Connect Instagram Account"
+
+msgid "2. Sinhronizacija"
+msgstr "2. Synchronization"
+
+msgid "3. Prikaz na sajtu"
+msgstr "3. Display on Site"
+
+msgid "4. Napredno"
+msgstr "4. Advanced"
+
+msgid "5. Prikaz na stranici"
+msgstr "5. Display on Page"
+
+msgid "Access Token"
+msgstr "Access Token"
+
+msgid "Ako embed nije dostupan (nedostaje App ID/Secret ili API greška), sajt automatski pada nazad na link ka Instagramu."
+msgstr "If embed isn't available (missing App ID/Secret or an API error), the site automatically falls back to a link to Instagram."
+
+msgid "Ako je isključeno (podrazumevano), sinhronizovane objave ostaju u bazi i posle deinstalacije."
+msgstr "If disabled (default), synced posts remain in the database even after uninstalling."
+
+msgid "Ako je unet, token nalepljen gore se automatski produžava na long-lived (60 dana). Bez ovoga se pretpostavlja da je nalepljeni token već long-lived."
+msgstr "If entered, the token pasted above is automatically extended to a long-lived token (60 days). Without it, the pasted token is assumed to already be long-lived."
+
+msgid "Automatski prikaz Instagram objava (Reels, video, foto, carousel) preko zvaničnog Instagram Graph API-ja."
+msgstr "Automatic display of Instagram posts (Reels, video, photo, carousel) via the official Instagram Graph API."
+
+msgid "Automatski prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa poslovnog Flyrec Instagram naloga na sajtu, preko zvaničnog Instagram Graph API-ja. Bez scrapinga."
+msgstr "Automatically displays the latest Instagram posts (Reels, video, photo, carousel) from the Flyrec business Instagram account on the site, via the official Instagram Graph API. No scraping."
+
+msgid "Broj kolona"
+msgstr "Number of columns"
+
+msgid "Broj kolona (desktop)"
+msgstr "Number of columns (desktop)"
+
+msgid "Broj objava"
+msgstr "Number of posts"
+
+msgid "Broj prikazanih objava (podrazumevano)"
+msgstr "Number of posts displayed (default)"
+
+msgid "Carousel"
+msgstr "Carousel"
+
+msgid "Datum objave"
+msgstr "Post date"
+
+msgid "Direktan link ka Instagramu"
+msgstr "Direct link to Instagram"
+
+msgid "Direktan link ka Instagramu (nova kartica)"
+msgstr "Direct link to Instagram (new tab)"
+
+msgid "Dostupan je i Gutenberg blok \"Flyrec Instagram Feed\" (kategorija Widgets) sa istim opcijama kroz vizuelni editor."
+msgstr "A Gutenberg block \"Flyrec Instagram Feed\" (Widgets category) is also available with the same options through the visual editor."
+
+msgid "Dva puta dnevno"
+msgstr "Twice daily"
+
+msgid "Embed nije podešen (nedostaje Instagram App ID/Secret)."
+msgstr "Embed is not configured (missing Instagram App ID/Secret)."
+
+msgid "Embed trenutno nije dostupan."
+msgstr "Embed is currently unavailable."
+
+msgid "Flyrec Instagram Feed"
+msgstr "Flyrec Instagram Feed"
+
+msgid "Flyrec Instagram Feed: nema sinhronizovanih objava još. (Ova poruka je vidljiva samo administratorima.) Idi na Flyrec Instagram Feed → Konekcija."
+msgstr "Flyrec Instagram Feed: no synced posts yet. (This message is visible only to administrators.) Go to Flyrec Instagram Feed → Connection."
+
+msgid "Fotografija"
+msgstr "Photo"
+
+msgid "Fotografije"
+msgstr "Photos"
+
+msgid "Gotovo."
+msgstr "Done."
+
+msgid "Greška pri povezivanju."
+msgstr "Error connecting."
+
+msgid "Greška pri čuvanju redosleda — pokušaj ponovo."
+msgstr "Error saving order — please try again."
+
+msgid "Instagram API je vratio HTTP status %d."
+msgstr "Instagram API returned HTTP status %d."
+
+msgid "Instagram API je vratio neočekivan odgovor pri proveri naloga."
+msgstr "Instagram API returned an unexpected response while verifying the account."
+
+msgid "Instagram App ID"
+msgstr "Instagram App ID"
+
+msgid "Instagram App Secret"
+msgstr "Instagram App Secret"
+
+msgid "Instagram Feed"
+msgstr "Instagram Feed"
+
+msgid "Instagram Media ID"
+msgstr "Instagram Media ID"
+
+msgid "Instagram access token je istekao. Poveži nalog ponovo u podešavanjima."
+msgstr "The Instagram access token has expired. Reconnect the account in the settings."
+
+msgid "Instagram access token nije podešen."
+msgstr "Instagram access token is not set."
+
+msgid "Instagram nalog nije povezan — nema tokena."
+msgstr "Instagram account is not connected — no token."
+
+msgid "Instagram nalog nije povezan."
+msgstr "Instagram account is not connected."
+
+msgid "Instagram objava"
+msgstr "Instagram post"
+
+msgid "Instagram objava – %s"
+msgstr "Instagram post – %s"
+
+msgid "Instagram objave"
+msgstr "Instagram posts"
+
+msgid "Interval sinhronizacije"
+msgstr "Sync interval"
+
+msgid "Jednom dnevno"
+msgstr "Once daily"
+
+msgid "Jednom na sat"
+msgstr "Once an hour"
+
+msgid "Još nema sinhronizovanih objava. Idi na Flyrec Instagram Feed → Sinhronizacija."
+msgstr "No synced posts yet. Go to Flyrec Instagram Feed → Synchronization."
+
+msgid "Klik na objavu"
+msgstr "Click on post"
+
+msgid "Link ka Instagramu"
+msgstr "Link to Instagram"
+
+msgid "Manji broj = prikazuje se pre ostalih. Nedirnute objave imaju veliku podrazumevanu vrednost — postavi manji broj (1, 2, 3...) da izdvojiš objavu na vrh. Lakše je prevući objave direktno u listi ispod (drag & drop)."
+msgstr "Lower number = displayed before others. Untouched posts have a high default value — set a lower number (1, 2, 3...) to bring a post to the top. It's easier to just drag posts directly in the list below (drag & drop)."
+
+msgid "Mrežna greška pri osvežavanju tokena."
+msgstr "Network error while refreshing the token."
+
+msgid "Mrežna greška pri povezivanju."
+msgstr "Network error while connecting."
+
+msgid "Mrežna greška pri sinhronizaciji."
+msgstr "Network error during synchronization."
+
+msgid "Mrežna greška."
+msgstr "Network error."
+
+msgid "Nalepi Instagram access token ovde"
+msgstr "Paste Instagram access token here"
+
+msgid "Nalog @%s uspešno povezan."
+msgstr "Account @%s successfully connected."
+
+msgid "Nalog još nije povezan."
+msgstr "Account is not connected yet."
+
+msgid "Naslov"
+msgstr "Title"
+
+msgid "Ne prikazuj ovu objavu na sajtu (ostaje sinhronizovana, samo se ne prikazuje)"
+msgstr "Don't show this post on the site (stays synced, just hidden from display)"
+
+msgid "Nedostaje Instagram App Secret za produženje tokena."
+msgstr "Instagram App Secret is missing to extend the token."
+
+msgid "Nema linka ka Instagram objavi."
+msgstr "No link to the Instagram post."
+
+msgid "Nema objava u korpi"
+msgstr "No posts in trash"
+
+msgid "Nema podataka za čuvanje redosleda."
+msgstr "No data to save the order."
+
+msgid "Nemate dozvolu za ovu akciju."
+msgstr "You don't have permission for this action."
+
+msgid "Nemate dozvolu za pristup ovoj stranici."
+msgstr "You don't have permission to access this page."
+
+msgid "Nepoznata Instagram API greška."
+msgstr "Unknown Instagram API error."
+
+msgid "Objava nije pronađena."
+msgstr "Post not found."
+
+msgid "Obrisano %d sinhronizovanih objava. Pokreni sinhronizaciju ponovo kad želiš."
+msgstr "%d synced posts deleted. Run synchronization again whenever you'd like."
+
+msgid "Obriši sve podatke i sinhronizuj ponovo"
+msgstr "Delete all data and sync again"
+
+msgid "Obriši sve sinhronizovane objave i podešavanja kada se plugin potpuno deinstalira"
+msgstr "Delete all synced posts and settings when the plugin is fully uninstalled"
+
+msgid "Opis i datum"
+msgstr "Description and date"
+
+msgid "Osveži token sada"
+msgstr "Refresh token now"
+
+msgid "Otvori na Instagramu"
+msgstr "Open on Instagram"
+
+msgid "Parametri su opcioni — bez njih se koriste podešavanja sa ove stranice. type: reels, video, image, carousel_album ili all (odvojeno zarezom za više tipova)."
+msgstr "Parameters are optional — without them, the settings from this page are used. type: reels, video, image, carousel_album or all (comma-separated for multiple types)."
+
+msgid "Podešavanja"
+msgstr "Settings"
+
+msgid "Podešavanja feed-a"
+msgstr "Feed settings"
+
+msgid "Pogledaj objavu"
+msgstr "View post"
+
+msgid "Pogledaj sinhronizovane objave"
+msgstr "View synced posts"
+
+msgid "Pogledajte na Instagramu"
+msgstr "View on Instagram"
+
+msgid "Ponašanje nakon klika (podrazumevano)"
+msgstr "Click behavior (default)"
+
+msgid "Popup sa Instagram embed-om"
+msgstr "Popup with Instagram embed"
+
+msgid "Popup/lightbox"
+msgstr "Popup/lightbox"
+
+msgid "Popup/lightbox na sajtu"
+msgstr "Popup/lightbox on the site"
+
+msgid "Poslednja sinhronizacija"
+msgstr "Last synchronization"
+
+msgid "Poslednja sinhronizacija:"
+msgstr "Last synchronization:"
+
+msgid "Povezano sa @%s"
+msgstr "Connected to @%s"
+
+msgid "Prekini vezu"
+msgstr "Disconnect"
+
+msgid "Pretraži objave"
+msgstr "Search posts"
+
+msgid "Prevuci za promenu redosleda"
+msgstr "Drag to reorder"
+
+msgid "Pri deinstalaciji plugina"
+msgstr "When uninstalling the plugin"
+
+msgid "Prikazano"
+msgstr "Shown"
+
+msgid "Prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa povezanog naloga."
+msgstr "Displays the latest Instagram posts (Reels, video, photo, carousel) from the connected account."
+
+msgid "Prikaži datum objave"
+msgstr "Show post date"
+
+msgid "Prikaži kratak opis (caption)"
+msgstr "Show short description (caption)"
+
+msgid "Radim…"
+msgstr "Working…"
+
+msgid "Redosled"
+msgstr "Order"
+
+msgid "Redosled prikaza"
+msgstr "Display order"
+
+msgid "Redosled sačuvan."
+msgstr "Order saved."
+
+msgid "Reels"
+msgstr "Reels"
+
+msgid "Sakrij iz grida"
+msgstr "Hide from grid"
+
+msgid "Sakriveno"
+msgstr "Hidden"
+
+msgid "Samo ručno"
+msgstr "Manual only"
+
+msgid "Sačuvaj i poveži"
+msgstr "Save and connect"
+
+msgid "Sačuvaj podešavanja"
+msgstr "Save settings"
+
+msgid "Sigurno želite da obrišete sve sinhronizovane objave? Ova akcija se ne može poništiti."
+msgstr "Are you sure you want to delete all synced posts? This action cannot be undone."
+
+msgid "Sigurno želite da prekinete vezu sa Instagram nalogom?"
+msgstr "Are you sure you want to disconnect the Instagram account?"
+
+msgid "Sinhronizovano %1$d objava (%2$d novih, %3$d ažuriranih)."
+msgstr "Synced %1$d posts (%2$d new, %3$d updated)."
+
+msgid "Sinhronizuj sada"
+msgstr "Sync now"
+
+msgid "Sledeća automatska sinhronizacija:"
+msgstr "Next automatic synchronization:"
+
+msgid "Sve"
+msgstr "All"
+
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+msgid "Tip"
+msgstr "Type"
+
+msgid "Tip sadržaja"
+msgstr "Content type"
+
+msgid "Tipovi sadržaja"
+msgstr "Content types"
+
+msgid "Token je istekao. Generiši nov token i nalepi ga ispod da bi sinhronizacija ponovo radila."
+msgstr "The token has expired. Generate a new token and paste it below to get synchronization working again."
+
+msgid "Token je uspešno osvežen."
+msgstr "Token successfully refreshed."
+
+msgid "Token se generiše kroz Metin zvanični Graph API Explorer (developers.facebook.com) — pogledaj README.md u folderu plugina za korak-po-korak uputstvo. Token se čuva enkriptovan i nikad se ne prikazuje na sajtu."
+msgstr "The token is generated through Meta's official Graph API Explorer (developers.facebook.com) — see the README.md in the plugin folder for step-by-step instructions. The token is stored encrypted and is never shown on the site."
+
+msgid "Unesite access token pre povezivanja."
+msgstr "Enter the access token before connecting."
+
+msgid "Unesite access token."
+msgstr "Enter the access token."
+
+msgid "Uredi objavu"
+msgstr "Edit post"
+
+msgid "Učitaj još"
+msgstr "Load more"
+
+msgid "Učitavanje…"
+msgstr "Loading…"
+
+msgid "Veza sa Instagram nalogom je prekinuta. Sinhronizovane objave su zadržane."
+msgstr "The connection to the Instagram account has been disconnected. Synced posts have been retained."
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video se ne može prikazati ovde."
+msgstr "The video cannot be displayed here."
+
+msgid "Zalepi shortcode na bilo koju stranicu ili post:"
+msgstr "Paste the shortcode into any page or post:"
+
+msgid "Zatvori"
+msgstr "Close"
+
+msgid "nije zakazana (ručni mod)"
+msgstr "not scheduled (manual mode)"
+
+msgid "nikad"
+msgstr "never"
+
+msgid "opciono"
+msgstr "optional"
+
+msgid "opciono, samo za embed prikaz"
+msgstr "optional, only for embed display"
+
+msgid "token ističe za %d dana"
+msgstr "token expires in %d days"
+
+msgid "Čuvanje redosleda…"
+msgstr "Saving order…"
+
+msgid "💡 Prevuci redove (za ⠿ ikonicu) da promeniš redosled prikaza na sajtu — čuva se automatski."
+msgstr "💡 Drag rows (by the ⠿ icon) to change the display order on the site — saves automatically."
+
+msgid "📷 Detalji Instagram objave"
+msgstr "📷 Instagram Post Details"
+
+msgid "📸 Flyrec Instagram Feed"
+msgstr "📸 Flyrec Instagram Feed"
+

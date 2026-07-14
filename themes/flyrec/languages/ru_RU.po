@@ -1,0 +1,426 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Beograd, Srbija"
+msgstr "Белград, Сербия"
+
+msgid "Bijeli logo (hero / dark tema)"
+msgstr "Белый логотип (hero / тёмная тема)"
+
+msgid "Broj telefona"
+msgstr "Номер телефона"
+
+msgid "Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam."
+msgstr "Кинематографичное аэровидео, фотография и продакшн для брендов, мероприятий, недвижимости и туризма."
+
+msgid "Cinematic snimanje dronom."
+msgstr "Кинематографическая съёмка дроном."
+
+msgid "Datum"
+msgstr "Дата"
+
+msgid "Dodaj novi snimak"
+msgstr "Добавить новое видео"
+
+msgid "Dodaj snimak"
+msgstr "Добавить видео"
+
+msgid "Događaji"
+msgstr "Мероприятия"
+
+msgid "Drugo"
+msgstr "Другое"
+
+msgid "Dugme 1 – Tekst"
+msgstr "Кнопка 1 – Текст"
+
+msgid "Dugme 2 – Tekst"
+msgstr "Кнопка 2 – Текст"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Email adresa"
+msgstr "Адрес email"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija."
+msgstr "Кинематографичное видео и фотосъёмка природы, туристических локаций и различных направлений."
+
+msgid "FlyRec"
+msgstr "FlyRec"
+
+msgid "FlyRec Podešavanja"
+msgstr "Настройки FlyRec"
+
+msgid "FlyRec Settings"
+msgstr "Настройки FlyRec"
+
+msgid "FlyRec – Početna"
+msgstr "FlyRec – Главная"
+
+msgid "Flyrec kroz fotografiju i video pretvara trenutke, prostore i pejzaže u vizuelne priče. Fokusirani smo na kvalitet, kreativnost i sadržaj prilagođen savremenim digitalnim platformama."
+msgstr "Flyrec превращает моменты, пространства и пейзажи в визуальные истории с помощью фото и видео. Мы делаем акцент на качестве, креативности и контенте, адаптированном под современные цифровые платформы."
+
+msgid "Footer Navigacija"
+msgstr "Навигация в подвале"
+
+msgid "Fotografisanje događaja"
+msgstr "Фотосъёмка мероприятий"
+
+msgid "Fotografisanje nekretnina"
+msgstr "Фотосъёмка недвижимости"
+
+msgid "Galerija prikaz"
+msgstr "Просмотр галереи"
+
+msgid "Glavni naslov"
+msgstr "Главный заголовок"
+
+msgid "Greška pri slanju. Kontaktirajte nas direktno na email."
+msgstr "Ошибка при отправке. Свяжитесь с нами напрямую по email."
+
+msgid "Greška pri slanju. Pokušajte ponovo."
+msgstr "Ошибка при отправке. Попробуйте снова."
+
+msgid "Hajde da sarađujemo"
+msgstr "Давайте сотрудничать"
+
+msgid "Hero slika"
+msgstr "Изображение hero-блока"
+
+msgid "Hero video URL (MP4 iz Media Library ili YouTube link)"
+msgstr "URL hero-видео (MP4 из медиатеки или ссылка YouTube)"
+
+msgid "Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro."
+msgstr "Спасибо! Сообщение успешно отправлено. Мы скоро с вами свяжемся."
+
+msgid "Ime i prezime"
+msgstr "Имя и фамилия"
+
+msgid "Inspekcije objekata"
+msgstr "Инспекция объектов"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Instagram URL"
+msgstr "Instagram URL"
+
+msgid "Iz vazduha"
+msgstr "С высоты"
+
+msgid "Izaberi jezik"
+msgstr "Выбрать язык"
+
+msgid "Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha."
+msgstr "Подборка наших последних съёмок и моментов, запечатлённых с высоты."
+
+msgid "Ko smo mi"
+msgstr "Кто мы"
+
+msgid "Kontakt"
+msgstr "Контакты"
+
+msgid "Lokacija"
+msgstr "Локация"
+
+msgid "Manji broj = prikazuje se pre ostalih."
+msgstr "Меньшее число = показывается раньше остальных."
+
+msgid "Molimo popunite sva obavezna polja."
+msgstr "Пожалуйста, заполните все обязательные поля."
+
+msgid "Montaža i obrada"
+msgstr "Монтаж и обработка"
+
+msgid "Montiranje promotivnih videa i obrada snimljenog materijala — od sirovog snimka do gotovog proizvoda spremnog za objavu."
+msgstr "Монтаж промо-видео и обработка отснятого материала — от исходной съёмки до готового продукта для публикации."
+
+msgid "Mrežna greška. Proverite konekciju i pokušajte ponovo."
+msgstr "Ошибка сети. Проверьте подключение и попробуйте снова."
+
+msgid "Najnoviji snimci"
+msgstr "Последние съёмки"
+
+msgid "Nalepi MP4 URL iz Media Library ili YouTube link (npr. https://www.youtube.com/watch?v=XXXXXXXXXXX). Video ide u loop, bez zvuka i bez YouTube kontrola. Ako ostane prazno, prikazuje se Hero slika."
+msgstr "Вставьте MP4-ссылку из медиатеки или ссылку YouTube (например, https://www.youtube.com/watch?v=XXXXXXXXXXX). Видео воспроизводится в цикле, без звука и без элементов управления YouTube. Если поле пустое, показывается изображение hero-блока."
+
+msgid "Naslov"
+msgstr "Заголовок"
+
+msgid "Navigacija"
+msgstr "Навигация"
+
+msgid "Naše usluge"
+msgstr "Наши услуги"
+
+msgid "Nekretnine"
+msgstr "Недвижимость"
+
+msgid "Nema"
+msgstr "Нет"
+
+msgid "Nema sadržaja."
+msgstr "Нет содержимого."
+
+msgid "Nema snimaka"
+msgstr "Нет видео"
+
+msgid "Nema snimaka u korpi"
+msgstr "Нет видео в корзине"
+
+msgid "Novi snimak"
+msgstr "Новое видео"
+
+msgid "Novi upit – %s"
+msgstr "Новый запрос – %s"
+
+msgid "O Flyrec-u"
+msgstr "О Flyrec"
+
+msgid "O nama"
+msgstr "О нас"
+
+msgid "Opis"
+msgstr "Описание"
+
+msgid "Otvori meni"
+msgstr "Открыть меню"
+
+msgid "PNG sa bijelim/svijetlim tekstom. Prikazuje se na transparentnom headeru i u tamnoj temi."
+msgstr "PNG с белым/светлым текстом. Отображается на прозрачной шапке и в тёмной теме."
+
+msgid "PNG sa tamnim tekstom. Prikazuje se kada korisnik skroluje u svijetloj temi."
+msgstr "PNG с тёмным текстом. Отображается при прокрутке в светлой теме."
+
+msgid "Pejzaži"
+msgstr "Пейзажи"
+
+msgid "Piši nam na WhatsApp"
+msgstr "Напишите нам в WhatsApp"
+
+msgid "Platforma"
+msgstr "Платформа"
+
+msgid "Podnaslov"
+msgstr "Подзаголовок"
+
+msgid "Pogledaj radove"
+msgstr "Смотреть работы"
+
+msgid "Pogledaj snimak"
+msgstr "Просмотреть видео"
+
+msgid "Portfolio"
+msgstr "Портфолио"
+
+msgid "Poruka i dodatne informacije"
+msgstr "Сообщение и дополнительная информация"
+
+msgid "Postavi bijeli logo za hero/tamnu pozadinu i tamni logo za bijeli header nakon skrola."
+msgstr "Установите белый логотип для hero-блока/тёмного фона и тёмный логотип для белой шапки после прокрутки."
+
+msgid "Početna"
+msgstr "Главная"
+
+msgid "Pošaljite upit"
+msgstr "Отправить запрос"
+
+msgid "Premium WordPress landing page tema za profesionalno snimanje dronom. Cinematic, dark, responzivna."
+msgstr "Премиальная тема WordPress для лендинга профессиональной съёмки дроном. Кинематографичная, тёмная, адаптивная."
+
+msgid "Pretraži snimke"
+msgstr "Поиск видео"
+
+msgid "Pređi na svetlu temu"
+msgstr "Переключить на светлую тему"
+
+msgid "Pređi na tamnu temu"
+msgstr "Переключить на тёмную тему"
+
+msgid "Prikazuje se samo kada je tip pozadine \"Slika\". Preporučena veličina: 1920×1080px."
+msgstr "Отображается только когда тип фона — «Изображение». Рекомендуемый размер: 1920×1080px."
+
+msgid "Primarna Navigacija"
+msgstr "Основная навигация"
+
+msgid "Primarna navigacija"
+msgstr "Основная навигация"
+
+msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina."
+msgstr "Профессиональная презентация квартир, домов, коммерческих помещений и другой недвижимости."
+
+msgid "Profesionalni Drone Studio"
+msgstr "Профессиональная дрон-студия"
+
+msgid "Profesionalno snimanje dronom"
+msgstr "Профессиональная съёмка дроном"
+
+msgid "Profesionalno snimanje dronom iz vazduha"
+msgstr "Профессиональная аэросъёмка дроном"
+
+msgid "Profesionalno snimanje i fotografisanje proslava, poslovnih događaja, manifestacija i posebnih trenutaka — video i fotografije koje prenose atmosferu i najvažnije trenutke."
+msgstr "Профессиональная видео- и фотосъёмка торжеств, корпоративных мероприятий, событий и особых моментов — материал, передающий атмосферу и самые важные моменты."
+
+msgid "Promeni temu"
+msgstr "Сменить тему"
+
+msgid "Radovi"
+msgstr "Работы"
+
+msgid "Recite nam nešto više o projektu..."
+msgstr "Расскажите нам больше о проекте..."
+
+msgid "Redosled"
+msgstr "Порядок"
+
+msgid "Redosled prikaza"
+msgstr "Порядок отображения"
+
+msgid "Sadržaj za socijalne mreže"
+msgstr "Контент для соцсетей"
+
+msgid "Skroluj"
+msgstr "Прокрутите"
+
+msgid "Slanje..."
+msgstr "Отправка..."
+
+msgid "Snimak"
+msgstr "Видео"
+
+msgid "Snimanje događaja"
+msgstr "Съёмка мероприятий"
+
+msgid "Snimanje nekretnina"
+msgstr "Съёмка недвижимости"
+
+msgid "Snimanje pejzaža"
+msgstr "Съёмка пейзажей"
+
+msgid "Snimanje venčanja"
+msgstr "Съёмка свадеб"
+
+msgid "Snimci"
+msgstr "Видео"
+
+msgid "Specijalizovani smo za sve vrste aerial snimanja dronom, od komercijalnih projekata do ličnih eventi."
+msgstr "Мы специализируемся на всех видах аэросъёмки дроном — от коммерческих проектов до личных мероприятий."
+
+msgid "Spreman za snimanje"
+msgstr "Готовы к съёмке"
+
+msgid "Sva prava zadržana."
+msgstr "Все права защищены."
+
+msgid "Svaki projekat je jedinstven. Pišite nam i zajednički ćemo kreirati nešto što će ostaviti utisak."
+msgstr "Каждый проект уникален. Напишите нам, и мы вместе создадим что-то незабываемое."
+
+msgid "Svetla tema"
+msgstr "Светлая тема"
+
+msgid "Tamna tema"
+msgstr "Тёмная тема"
+
+msgid "Tamni logo (bijeli header / light tema)"
+msgstr "Тёмный логотип (белая шапка / светлая тема)"
+
+msgid "Telefon"
+msgstr "Телефон"
+
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+msgid "Tip pozadine"
+msgstr "Тип фона"
+
+msgid "Turistički video"
+msgstr "Туристическое видео"
+
+msgid "Unesite ispravnu email adresu."
+msgstr "Введите корректный email-адрес."
+
+msgid "Uputstvo:"
+msgstr "Инструкция:"
+
+msgid "Uredi snimak"
+msgstr "Редактировать видео"
+
+msgid "Usluge"
+msgstr "Услуги"
+
+msgid "Vaš svet iz nove perspektive."
+msgstr "Ваш мир с новой перспективы."
+
+msgid "Vaše ime"
+msgstr "Ваше имя"
+
+msgid "Video Radovi"
+msgstr "Видеоработы"
+
+msgid "Video URL"
+msgstr "URL видео"
+
+msgid "Video radovi"
+msgstr "Видеоработы"
+
+msgid "Vrsta usluge"
+msgstr "Тип услуги"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "YouTube primer:"
+msgstr "Пример YouTube:"
+
+msgid "YouTube, Vimeo ili Instagram URL snimka."
+msgstr "Ссылка на видео с YouTube, Vimeo или Instagram."
+
+msgid "Zakaži snimanje"
+msgstr "Заказать съёмку"
+
+msgid "Zatvori"
+msgstr "Закрыть"
+
+msgid "iz nove perspektive?"
+msgstr "с новой перспективы?"
+
+msgid "Šta nudimo"
+msgstr "Что мы предлагаем"
+
+msgid "• %s — postavi kroz \"Istaknuta slika\" u desnom panelu."
+msgstr "• %s — установите через «Изображение записи» в правой панели."
+
+msgid "• %s — unesi gore u standardno \"Naslov\" polje."
+msgstr "• %s — введите выше в стандартное поле «Заголовок»."
+
+msgid "• %s — unesi u \"Sadržaj\" editor ispod."
+msgstr "• %s — введите в редакторе «Содержимое» ниже."
+
+msgid "🎬 Hero Sekcija"
+msgstr "🎬 Hero-секция"
+
+msgid "🎬 Video (MP4)"
+msgstr "🎬 Видео (MP4)"
+
+msgid "📞 Kontakt Informacije"
+msgstr "📞 Контактная информация"
+
+msgid "📹 Detalji snimka"
+msgstr "📹 Детали видео"
+
+msgid "🖼 Logo Slike"
+msgstr "🖼 Изображения логотипа"
+
+msgid "🖼 Slika"
+msgstr "🖼 Изображение"
+

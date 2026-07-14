@@ -12,6 +12,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         initNavigation();
         initThemeToggle();
+        initLangSwitcher();
         initScrollAnimations();
         initVideoLazyLoad();
         initContactForm();
@@ -115,14 +116,59 @@
             var theme = html.getAttribute('data-theme') || 'dark';
             var isDark = theme === 'dark';
 
-            var ariaLabel = isDark ? 'Pređi na svetlu temu' : 'Pređi na tamnu temu';
-            var titleText = isDark ? 'Svetla tema'          : 'Tamna tema';
+            var i18n = (typeof flyrecData !== 'undefined' && flyrecData.i18n) || {};
+            var ariaLabel = isDark ? (i18n.themeToLight || 'Pređi na svetlu temu') : (i18n.themeToDark || 'Pređi na tamnu temu');
+            var titleText = isDark ? (i18n.themeLight    || 'Svetla tema')          : (i18n.themeDark    || 'Tamna tema');
 
             if (btnDesktop) {
                 btnDesktop.setAttribute('aria-label', ariaLabel);
                 btnDesktop.setAttribute('title', titleText);
             }
         }
+    }
+
+    // =============================================
+    // 2b. JEZIČKI SVIČ – otvara/zatvara dropdown listu (Polylang)
+    // =============================================
+    function initLangSwitcher() {
+        var wrapper = document.getElementById('langSwitcher');
+        var toggle  = document.getElementById('langSwitcherToggle');
+        var menu    = document.getElementById('langSwitcherMenu');
+
+        if (!wrapper || !toggle || !menu) return;
+
+        function closeMenu() {
+            wrapper.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.setAttribute('aria-hidden', 'true');
+        }
+
+        function openMenu() {
+            wrapper.classList.add('open');
+            toggle.setAttribute('aria-expanded', 'true');
+            menu.setAttribute('aria-hidden', 'false');
+        }
+
+        toggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (wrapper.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!wrapper.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if ('Escape' === e.key) {
+                closeMenu();
+            }
+        });
     }
 
     // =============================================
@@ -242,13 +288,13 @@
                     msgEl.style.display = 'block';
                     form.reset();
                 } else {
-                    msgEl.textContent  = data.data.message || 'Greška pri slanju. Pokušajte ponovo.';
+                    msgEl.textContent  = data.data.message || (flyrecData.i18n && flyrecData.i18n.sendError) || 'Greška pri slanju. Pokušajte ponovo.';
                     msgEl.className    = 'form-message error';
                     msgEl.style.display = 'block';
                 }
             })
             .catch(function () {
-                msgEl.textContent  = 'Mrežna greška. Proverite konekciju i pokušajte ponovo.';
+                msgEl.textContent  = (flyrecData.i18n && flyrecData.i18n.networkError) || 'Mrežna greška. Proverite konekciju i pokušajte ponovo.';
                 msgEl.className    = 'form-message error';
                 msgEl.style.display = 'block';
             })

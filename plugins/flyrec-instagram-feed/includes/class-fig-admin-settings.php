@@ -84,9 +84,16 @@ class Fig_Admin_Settings {
             'ajaxUrl' => admin_url( 'admin-ajax.php' ),
             'nonce'   => wp_create_nonce( Fig_Ajax::NONCE_ADMIN ),
             'i18n'    => [
-                'confirmDisconnect' => __( 'Sigurno želite da prekinete vezu sa Instagram nalogom?', 'flyrec-instagram-feed' ),
-                'confirmClear'      => __( 'Sigurno želite da obrišete sve sinhronizovane objave? Ova akcija se ne može poništiti.', 'flyrec-instagram-feed' ),
-                'working'           => __( 'Radim…', 'flyrec-instagram-feed' ),
+                'confirmDisconnect'     => __( 'Sigurno želite da prekinete vezu sa Instagram nalogom?', 'flyrec-instagram-feed' ),
+                'confirmClear'          => __( 'Sigurno želite da obrišete sve sinhronizovane objave? Ova akcija se ne može poništiti.', 'flyrec-instagram-feed' ),
+                'working'               => __( 'Radim…', 'flyrec-instagram-feed' ),
+                'enterToken'            => __( 'Unesite access token pre povezivanja.', 'flyrec-instagram-feed' ),
+                'connectError'          => __( 'Greška pri povezivanju.', 'flyrec-instagram-feed' ),
+                'networkErrorConnect'   => __( 'Mrežna greška pri povezivanju.', 'flyrec-instagram-feed' ),
+                'networkErrorSync'      => __( 'Mrežna greška pri sinhronizaciji.', 'flyrec-instagram-feed' ),
+                'networkErrorRefresh'   => __( 'Mrežna greška pri osvežavanju tokena.', 'flyrec-instagram-feed' ),
+                'networkError'          => __( 'Mrežna greška.', 'flyrec-instagram-feed' ),
+                'done'                  => __( 'Gotovo.', 'flyrec-instagram-feed' ),
             ],
         ] );
     }

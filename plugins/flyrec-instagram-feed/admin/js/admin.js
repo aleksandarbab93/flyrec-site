@@ -38,7 +38,7 @@
             var appSecret = $('#fig_app_secret_input').val().trim();
 
             if (!token) {
-                showNotice('error', 'Unesite access token pre povezivanja.');
+                showNotice('error', figAdmin.i18n.enterToken);
                 return;
             }
 
@@ -49,11 +49,11 @@
                             showNotice('success', res.data.message);
                             setTimeout(function () { window.location.reload(); }, 1200);
                         } else {
-                            showNotice('error', res.data.message || 'Greška pri povezivanju.');
+                            showNotice('error', res.data.message || figAdmin.i18n.connectError);
                         }
                     })
                     .fail(function () {
-                        showNotice('error', 'Mrežna greška pri povezivanju.');
+                        showNotice('error', figAdmin.i18n.networkErrorConnect);
                     });
             });
         });
@@ -64,13 +64,13 @@
                 return ajaxPost('fig_manual_sync')
                     .done(function (res) {
                         var data = res.data || {};
-                        showNotice(res.success ? 'success' : 'error', data.message || 'Gotovo.');
+                        showNotice(res.success ? 'success' : 'error', data.message || figAdmin.i18n.done);
                         if (res.success) {
                             setTimeout(function () { window.location.reload(); }, 1200);
                         }
                     })
                     .fail(function () {
-                        showNotice('error', 'Mrežna greška pri sinhronizaciji.');
+                        showNotice('error', figAdmin.i18n.networkErrorSync);
                     });
             });
         });
@@ -80,13 +80,13 @@
             withBusyButton($btn, function () {
                 return ajaxPost('fig_refresh_token')
                     .done(function (res) {
-                        showNotice(res.success ? 'success' : 'error', (res.data && res.data.message) || 'Gotovo.');
+                        showNotice(res.success ? 'success' : 'error', (res.data && res.data.message) || figAdmin.i18n.done);
                         if (res.success) {
                             setTimeout(function () { window.location.reload(); }, 1200);
                         }
                     })
                     .fail(function () {
-                        showNotice('error', 'Mrežna greška pri osvežavanju tokena.');
+                        showNotice('error', figAdmin.i18n.networkErrorRefresh);
                     });
             });
         });
@@ -97,11 +97,11 @@
             withBusyButton($btn, function () {
                 return ajaxPost('fig_disconnect')
                     .done(function (res) {
-                        showNotice('success', (res.data && res.data.message) || 'Gotovo.');
+                        showNotice('success', (res.data && res.data.message) || figAdmin.i18n.done);
                         setTimeout(function () { window.location.reload(); }, 1000);
                     })
                     .fail(function () {
-                        showNotice('error', 'Mrežna greška.');
+                        showNotice('error', figAdmin.i18n.networkError);
                     });
             });
         });
@@ -112,11 +112,11 @@
             withBusyButton($btn, function () {
                 return ajaxPost('fig_clear_data')
                     .done(function (res) {
-                        showNotice('success', (res.data && res.data.message) || 'Gotovo.');
+                        showNotice('success', (res.data && res.data.message) || figAdmin.i18n.done);
                         setTimeout(function () { window.location.reload(); }, 1200);
                     })
                     .fail(function () {
-                        showNotice('error', 'Mrežna greška.');
+                        showNotice('error', figAdmin.i18n.networkError);
                     });
             });
         });

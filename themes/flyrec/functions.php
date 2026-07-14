@@ -120,6 +120,14 @@ function flyrec_enqueue_scripts() {
     wp_localize_script( 'flyrec-main', 'flyrecData', [
         'ajaxUrl' => admin_url( 'admin-ajax.php' ),
         'nonce'   => wp_create_nonce( 'flyrec_contact_nonce' ),
+        'i18n'    => [
+            'themeToLight'  => __( 'Pređi na svetlu temu', 'flyrec' ),
+            'themeToDark'   => __( 'Pređi na tamnu temu', 'flyrec' ),
+            'themeLight'    => __( 'Svetla tema', 'flyrec' ),
+            'themeDark'     => __( 'Tamna tema', 'flyrec' ),
+            'sendError'     => __( 'Greška pri slanju. Pokušajte ponovo.', 'flyrec' ),
+            'networkError'  => __( 'Mrežna greška. Proverite konekciju i pokušajte ponovo.', 'flyrec' ),
+        ],
     ] );
 }
 add_action( 'wp_enqueue_scripts', 'flyrec_enqueue_scripts' );
@@ -195,7 +203,7 @@ function flyrec_video_meta_callback( $post ) {
 
     <table class="flyrec-meta-table">
         <tr>
-            <th><label for="flyrec_video_url">Video URL</label></th>
+            <th><label for="flyrec_video_url"><?php esc_html_e( 'Video URL', 'flyrec' ); ?></label></th>
             <td>
                 <input type="url"
                     id="flyrec_video_url"
@@ -203,11 +211,11 @@ function flyrec_video_meta_callback( $post ) {
                     value="<?php echo esc_attr( $url ); ?>"
                     placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX"
                 />
-                <p class="description">YouTube, Vimeo ili Instagram URL snimka.</p>
+                <p class="description"><?php esc_html_e( 'YouTube, Vimeo ili Instagram URL snimka.', 'flyrec' ); ?></p>
             </td>
         </tr>
         <tr>
-            <th><label for="flyrec_video_type">Platforma</label></th>
+            <th><label for="flyrec_video_type"><?php esc_html_e( 'Platforma', 'flyrec' ); ?></label></th>
             <td>
                 <select id="flyrec_video_type" name="flyrec_video_type">
                     <option value="youtube"   <?php selected( $type, 'youtube' );   ?>>YouTube</option>
@@ -217,7 +225,7 @@ function flyrec_video_meta_callback( $post ) {
             </td>
         </tr>
         <tr>
-            <th><label for="flyrec_video_order">Redosled prikaza</label></th>
+            <th><label for="flyrec_video_order"><?php esc_html_e( 'Redosled prikaza', 'flyrec' ); ?></label></th>
             <td>
                 <input type="number"
                     id="flyrec_video_order"
@@ -226,17 +234,26 @@ function flyrec_video_meta_callback( $post ) {
                     min="0" max="999"
                     style="width:100px;"
                 />
-                <p class="description">Manji broj = prikazuje se pre ostalih.</p>
+                <p class="description"><?php esc_html_e( 'Manji broj = prikazuje se pre ostalih.', 'flyrec' ); ?></p>
             </td>
         </tr>
     </table>
 
     <div class="flyrec-meta-info">
-        <strong>Uputstvo:</strong><br>
-        • <strong>Naslov</strong> — unesi gore u standardno "Naslov" polje.<br>
-        • <strong>Opis</strong> — unesi u "Sadržaj" editor ispod.<br>
-        • <strong>Thumbnail</strong> — postavi kroz "Istaknuta slika" u desnom panelu.<br>
-        • <strong>YouTube primer:</strong> <code>https://www.youtube.com/watch?v=dQw4w9WgXcQ</code>
+        <strong><?php esc_html_e( 'Uputstvo:', 'flyrec' ); ?></strong><br>
+        <?php
+        /* translators: %s: field name "Naslov" (Title) */
+        printf( esc_html__( '• %s — unesi gore u standardno "Naslov" polje.', 'flyrec' ), '<strong>' . esc_html__( 'Naslov', 'flyrec' ) . '</strong>' );
+        ?><br>
+        <?php
+        /* translators: %s: field name "Opis" (Description) */
+        printf( esc_html__( '• %s — unesi u "Sadržaj" editor ispod.', 'flyrec' ), '<strong>' . esc_html__( 'Opis', 'flyrec' ) . '</strong>' );
+        ?><br>
+        <?php
+        /* translators: %s: field name "Thumbnail" */
+        printf( esc_html__( '• %s — postavi kroz "Istaknuta slika" u desnom panelu.', 'flyrec' ), '<strong>' . esc_html__( 'Thumbnail', 'flyrec' ) . '</strong>' );
+        ?><br>
+        • <strong><?php esc_html_e( 'YouTube primer:', 'flyrec' ); ?></strong> <code>https://www.youtube.com/watch?v=dQw4w9WgXcQ</code>
     </div>
     <?php
 }
@@ -383,32 +400,15 @@ function flyrec_customize_register( $wp_customize ) {
         'section'     => 'flyrec_hero',
     ] ) );
 
+    // Napomena: hero naslov/podnaslov/dugmad su od sada definisani po jeziku
+    // direktno u front-page.php ($flyrec_hero_i18n), ne kroz Customizer –
+    // tako se ispravno prevode na sr/en/ru. Ovde ostaje samo video/slika pozadina.
     $hero_settings = [
         'flyrec_hero_video_url' => [
             'default' => '',
             'label'   => __( 'Hero video URL (MP4 iz Media Library ili YouTube link)', 'flyrec' ),
             'type'    => 'url',
             'desc'    => __( 'Nalepi MP4 URL iz Media Library ili YouTube link (npr. https://www.youtube.com/watch?v=XXXXXXXXXXX). Video ide u loop, bez zvuka i bez YouTube kontrola. Ako ostane prazno, prikazuje se Hero slika.', 'flyrec' ),
-        ],
-        'flyrec_hero_title' => [
-            'default' => __( 'Profesionalno snimanje dronom iz vazduha', 'flyrec' ),
-            'label'   => __( 'Glavni naslov', 'flyrec' ),
-            'type'    => 'text',
-        ],
-        'flyrec_hero_subtitle' => [
-            'default' => __( 'Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam.', 'flyrec' ),
-            'label'   => __( 'Podnaslov', 'flyrec' ),
-            'type'    => 'textarea',
-        ],
-        'flyrec_cta1_text' => [
-            'default' => __( 'Pogledaj radove', 'flyrec' ),
-            'label'   => __( 'Dugme 1 – Tekst', 'flyrec' ),
-            'type'    => 'text',
-        ],
-        'flyrec_cta2_text' => [
-            'default' => __( 'Zakaži snimanje', 'flyrec' ),
-            'label'   => __( 'Dugme 2 – Tekst', 'flyrec' ),
-            'type'    => 'text',
         ],
     ];
 
@@ -432,11 +432,14 @@ function flyrec_customize_register( $wp_customize ) {
         'priority' => 40,
     ] );
 
+    // Napomena: "Lokacija" je od sada definisana po jeziku direktno u
+    // front-page.php/footer.php ($flyrec_hero_i18n), jer se naziv mesta
+    // prevodi (npr. "Tivat, Crna Gora" → "Tivat, Montenegro"). Telefon/email/
+    // Instagram ostaju ovde jer su isti bez obzira na jezik.
     $contact_settings = [
         'flyrec_contact_phone'     => [ __( 'Telefon',       'flyrec' ), '+381 60 000 0000',             'text' ],
         'flyrec_contact_email'     => [ __( 'Email',         'flyrec' ), 'info@flyrec.rs',                'text' ],
         'flyrec_contact_instagram' => [ __( 'Instagram URL', 'flyrec' ), 'https://instagram.com/flyrec',  'url'  ],
-        'flyrec_contact_location'  => [ __( 'Lokacija',      'flyrec' ), 'Beograd, Srbija',               'text' ],
     ];
 
     foreach ( $contact_settings as $key => [ $label, $default, $type ] ) {
@@ -500,8 +503,8 @@ add_action( 'wp_ajax_nopriv_flyrec_contact', 'flyrec_handle_contact' );
 // =============================================
 if ( class_exists( 'ACF' ) && function_exists( 'acf_add_options_page' ) ) {
     acf_add_options_page( [
-        'page_title' => 'FlyRec Podešavanja',
-        'menu_title' => 'FlyRec Settings',
+        'page_title' => __( 'FlyRec Podešavanja', 'flyrec' ),
+        'menu_title' => __( 'FlyRec Settings', 'flyrec' ),
         'menu_slug'  => 'flyrec-settings',
         'capability' => 'manage_options',
     ] );
@@ -525,7 +528,7 @@ add_filter( 'manage_flyrec_video_posts_columns', 'flyrec_video_columns' );
 function flyrec_video_column_content( $column, $post_id ) {
     if ( 'flyrec_thumb' === $column ) {
         $thumb = get_the_post_thumbnail( $post_id, [ 80, 45 ] );
-        echo $thumb ?: '<span style="color:#999;">Nema</span>';
+        echo $thumb ?: '<span style="color:#999;">' . esc_html__( 'Nema', 'flyrec' ) . '</span>';
     }
     if ( 'flyrec_video_type' === $column ) {
         $type = get_post_meta( $post_id, '_flyrec_video_type', true );
@@ -585,6 +588,42 @@ function flyrec_detect_video_type( $url ) {
 }
 
 // =============================================
+// SADRŽAJ PO JEZIKU – hero naslov/podnaslov/dugmad + naziv lokacije
+// Namerno NIJE u Customizer-u: ovi tekstovi se razlikuju po jeziku
+// (sr/en/ru), a Customizer čuva samo jednu vrednost za ceo sajt.
+// Za izmenu teksta, uredi ovaj niz direktno.
+// =============================================
+function flyrec_get_i18n_content() {
+    $lang = function_exists( 'pll_current_language' ) ? pll_current_language() : 'sr';
+
+    $content = [
+        'sr' => [
+            'hero_title'    => 'Profesionalno snimanje dronom iz vazduha',
+            'hero_subtitle' => 'Cinematic aerial video, fotografije i produkcija za brendove, evente, nekretnine i turizam.',
+            'cta1_text'     => 'Pogledaj radove',
+            'cta2_text'     => 'Zakaži snimanje',
+            'location'      => 'Tivat, Crna Gora',
+        ],
+        'en' => [
+            'hero_title'    => 'Professional aerial drone filming',
+            'hero_subtitle' => 'Cinematic aerial video, photography and production for brands, events, real estate and tourism.',
+            'cta1_text'     => 'View our work',
+            'cta2_text'     => 'Book a shoot',
+            'location'      => 'Tivat, Montenegro',
+        ],
+        'ru' => [
+            'hero_title'    => 'Профессиональная аэросъёмка дроном',
+            'hero_subtitle' => 'Кинематографичное аэровидео, фотография и продакшн для брендов, мероприятий, недвижимости и туризма.',
+            'cta1_text'     => 'Смотреть работы',
+            'cta2_text'     => 'Заказать съёмку',
+            'location'      => 'Тиват, Черногория',
+        ],
+    ];
+
+    return $content[ $lang ] ?? $content['sr'];
+}
+
+// =============================================
 // ČIŠĆENJE WP HEAD
 // =============================================
 remove_action( 'wp_head', 'wp_generator' );
@@ -598,3 +637,17 @@ add_filter( 'pings_open',    '__return_false', 20, 2 );
 add_action( 'admin_menu', function () {
     remove_menu_page( 'edit-comments.php' );
 } );
+
+// =============================================
+// SPREČI NEPOTREBAN REDIRECT NA /en/home-2/ i sl.
+// WP po defaultu preusmerava direktan pristup slug-u statične početne
+// stranice na home_url() – ali kad Polylang menja page_on_front po jeziku
+// (nema isti slug kao language home), WP zna pogrešno da odredi kanonski
+// URL i umesto da ostane na /en/ preusmeri na /en/{slug-prevoda}/.
+// =============================================
+add_filter( 'redirect_canonical', function ( $redirect_url, $requested_url ) {
+    if ( is_front_page() ) {
+        return false;
+    }
+    return $redirect_url;
+}, 10, 2 );

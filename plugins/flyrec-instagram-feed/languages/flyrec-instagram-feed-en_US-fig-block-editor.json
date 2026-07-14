@@ -1,0 +1,60 @@
+{
+    "translation-revision-date": "2026-07-14 08:39:01+0000",
+    "generator": "Flyrec Translation Builder",
+    "source": "blocks/instagram-feed/block.js",
+    "domain": "flyrec-instagram-feed",
+    "locale_data": {
+        "flyrec-instagram-feed": {
+            "": {
+                "domain": "flyrec-instagram-feed",
+                "lang": "en_US",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Broj kolona": [
+                "Number of columns"
+            ],
+            "Broj objava": [
+                "Number of posts"
+            ],
+            "Carousel": [
+                "Carousel"
+            ],
+            "Direktan link ka Instagramu": [
+                "Direct link to Instagram"
+            ],
+            "Flyrec Instagram Feed": [
+                "Flyrec Instagram Feed"
+            ],
+            "Fotografije": [
+                "Photos"
+            ],
+            "Klik na objavu": [
+                "Click on post"
+            ],
+            "Podešavanja feed-a": [
+                "Feed settings"
+            ],
+            "Popup sa Instagram embed-om": [
+                "Popup with Instagram embed"
+            ],
+            "Popup/lightbox": [
+                "Popup/lightbox"
+            ],
+            "Prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa povezanog naloga.": [
+                "Displays the latest Instagram posts (Reels, video, photo, carousel) from the connected account."
+            ],
+            "Reels": [
+                "Reels"
+            ],
+            "Sve": [
+                "All"
+            ],
+            "Tip sadržaja": [
+                "Content type"
+            ],
+            "Video": [
+                "Video"
+            ]
+        }
+    }
+}

@@ -71,7 +71,7 @@
                 <ul class="footer-contact-list">
                     <?php $phone = get_theme_mod('flyrec_contact_phone', '+381 60 000 0000'); ?>
                     <?php $email = get_theme_mod('flyrec_contact_email', 'info@flyrec.rs'); ?>
-                    <?php $location = get_theme_mod('flyrec_contact_location', 'Beograd, Srbija'); ?>
+                    <?php $location = flyrec_get_i18n_content()['location']; ?>
 
                     <li>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -109,7 +109,7 @@
                 <?php esc_html_e( 'Sva prava zadržana.', 'flyrec' ); ?>
             </p>
             <p class="footer-credit">
-                <?php esc_html_e( 'Profesionalno snimanje dronom', 'flyrec' ); ?> &mdash; <?php echo esc_html(get_theme_mod('flyrec_contact_location', __( 'Beograd, Srbija', 'flyrec' ))); ?>
+                <?php esc_html_e( 'Profesionalno snimanje dronom', 'flyrec' ); ?> &mdash; <?php echo esc_html( flyrec_get_i18n_content()['location'] ); ?>
             </p>
         </div>
 
