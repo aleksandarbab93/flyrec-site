@@ -5,9 +5,20 @@
  */
 
 // =============================================
+// GOOGLE TAG MANAGER / ANALYTICS – samo na produkciji
+// Na lokalu (Local by Flywheel postavlja WP_ENVIRONMENT_TYPE=local u
+// wp-config.php) i na staging okruženjima ovi skriptovi se uopšte ne
+// učitavaju, da testiranje/development ne zagađuje statistiku.
+// =============================================
+function flyrec_is_production() {
+    return 'production' === wp_get_environment_type();
+}
+
+// =============================================
 // GOOGLE TAG MANAGER (head)
 // =============================================
 add_action( 'wp_head', function () {
+    if ( ! flyrec_is_production() ) return;
     ?>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,6 +34,7 @@ add_action( 'wp_head', function () {
 // GOOGLE TAG MANAGER (body, noscript
 // =============================================
 add_action( 'wp_body_open', function () {
+    if ( ! flyrec_is_production() ) return;
     ?>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2SNL2RX"
@@ -35,6 +47,7 @@ add_action( 'wp_body_open', function () {
 // GOOGLE ANALYTICS (gtag.js)
 // =============================================
 add_action( 'wp_head', function () {
+    if ( ! flyrec_is_production() ) return;
     ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HNH72GWJT"></script>
