@@ -453,6 +453,7 @@ function flyrec_customize_register( $wp_customize ) {
         'flyrec_contact_phone'     => [ __( 'Telefon',       'flyrec' ), '+381 60 000 0000',             'text' ],
         'flyrec_contact_email'     => [ __( 'Email',         'flyrec' ), 'info@flyrec.rs',                'text' ],
         'flyrec_contact_instagram' => [ __( 'Instagram URL', 'flyrec' ), 'https://instagram.com/flyrec',  'url'  ],
+        'flyrec_youtube_channel'   => [ __( 'YouTube kanal URL', 'flyrec' ), 'https://www.youtube.com/@flyrec001', 'url' ],
     ];
 
     foreach ( $contact_settings as $key => [ $label, $default, $type ] ) {

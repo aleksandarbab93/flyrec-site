@@ -26,7 +26,8 @@
                             <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
                         </svg>
                     </a>
-                    <a href="https://www.youtube.com/@flyrec001" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'YouTube', 'flyrec' ); ?>">
+                    <?php $yt = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.com/@flyrec001'); ?>
+                    <a href="<?php echo esc_url($yt); ?>" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'YouTube', 'flyrec' ); ?>">
                         <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47a2.78 2.78 0 00-1.95 1.95C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z" />
                             <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none" />
@@ -69,18 +70,9 @@
             <div class="footer-contact">
                 <h4 class="footer-heading"><?php esc_html_e( 'Kontakt', 'flyrec' ); ?></h4>
                 <ul class="footer-contact-list">
-                    <?php $phone = get_theme_mod('flyrec_contact_phone', '+381 60 000 0000'); ?>
                     <?php $email = get_theme_mod('flyrec_contact_email', 'info@flyrec.rs'); ?>
                     <?php $location = flyrec_get_i18n_content()['location']; ?>
 
-                    <li>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-                        </svg>
-                        <a href="tel:<?php echo esc_attr(preg_replace('/\s/', '', $phone)); ?>">
-                            <?php echo esc_html($phone); ?>
-                        </a>
-                    </li>
                     <li>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />

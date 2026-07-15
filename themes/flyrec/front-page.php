@@ -24,10 +24,10 @@ $hero_subtitle = $i18n_content['hero_subtitle'];
 $cta1_text     = $i18n_content['cta1_text'];
 $cta2_text     = $i18n_content['cta2_text'];
 
-$contact_phone = get_theme_mod('flyrec_contact_phone',     '+381 60 000 0000');
 $contact_email = get_theme_mod('flyrec_contact_email',     'info@flyrec.rs');
 $contact_ig    = get_theme_mod('flyrec_contact_instagram', 'https://instagram.com/flyrec');
 $contact_loc   = $i18n_content['location'];
+$youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.com/@flyrec001');
 ?>
 
 <main id="mainContent">
@@ -252,6 +252,94 @@ $contact_loc   = $i18n_content['location'];
 
 
     <!-- =========================================
+         VIDEO RADOVI – YouTube embed grid (16:9)
+         ========================================= -->
+    <section class="section section--dark" id="video-radovi">
+        <div class="container">
+
+            <div class="section-header fade-up">
+                <span class="section-label"><?php esc_html_e('YouTube', 'flyrec'); ?></span>
+                <h2 class="section-title"><?php esc_html_e('Video radovi', 'flyrec'); ?></h2>
+                <p class="section-subtitle">
+                    <?php esc_html_e('Izabrane video produkcije sa našeg YouTube kanala.', 'flyrec'); ?>
+                </p>
+            </div>
+
+            <?php
+            $yt_videos = new WP_Query([
+                'post_type'      => 'flyrec_video',
+                'posts_per_page' => 3,
+                'post_status'    => 'publish',
+                'orderby'        => 'meta_value_num',
+                'meta_key'       => '_flyrec_video_order',
+                'order'          => 'ASC',
+            ]);
+            ?>
+
+            <?php if ($yt_videos->have_posts()) : ?>
+                <div class="videos-grid">
+                    <?php while ($yt_videos->have_posts()) : $yt_videos->the_post(); ?>
+                        <?php
+                        $video_url  = get_post_meta(get_the_ID(), '_flyrec_video_url', true);
+                        $video_type = get_post_meta(get_the_ID(), '_flyrec_video_type', true) ?: 'youtube';
+                        $embed_url  = flyrec_get_embed_url($video_url, $video_type);
+                        ?>
+                        <article class="video-card fade-up">
+                            <div class="video-embed-wrapper" data-src="<?php echo esc_attr($embed_url); ?>">
+                                <?php
+                                $vthumb = has_post_thumbnail()
+                                    ? get_the_post_thumbnail_url(null, 'flyrec-thumb')
+                                    : flyrec_get_auto_thumbnail($video_url, $video_type);
+                                ?>
+                                <?php if ($vthumb) : ?>
+                                    <img
+                                        class="video-thumb"
+                                        src="<?php echo esc_url($vthumb); ?>"
+                                        alt="<?php the_title_attribute(); ?>"
+                                        loading="lazy">
+                                <?php else : ?>
+                                    <div class="video-thumb-placeholder"></div>
+                                <?php endif; ?>
+                                <button class="video-play-btn" aria-label="<?php esc_attr_e('Pokreni video', 'flyrec'); ?>">
+                                    <span class="play-icon-wrap" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <polygon points="6 3 20 12 6 21" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </article>
+                    <?php endwhile;
+                    wp_reset_postdata(); ?>
+                </div><!-- /videos-grid -->
+            <?php elseif (current_user_can('manage_options')) : ?>
+                <p class="placeholder-notice">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 16v-4" />
+                        <path d="M12 8h.01" />
+                    </svg>
+                    <em><?php printf(__('Admin: Dodajte video radove kroz <strong>%s</strong> u WordPress adminu. (Ova poruka je vidljiva samo administratorima.)', 'flyrec'), 'Video Radovi → Dodaj snimak'); ?></em>
+                </p>
+            <?php endif; ?>
+
+            <?php if ($youtube_channel) : ?>
+                <div class="youtube-cta fade-up">
+                    <a href="<?php echo esc_url($youtube_channel); ?>"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn--yt">
+                        <?php esc_html_e('Pogledaj YouTube kanal', 'flyrec'); ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+
+        </div>
+    </section>
+    <!-- /VIDEO RADOVI -->
+
+
+    <!-- =========================================
          O NAMA
          ========================================= -->
     <section class="section section--dark section--about" id="o-nama">
@@ -287,19 +375,6 @@ $contact_loc   = $i18n_content['location'];
                     </p>
 
                     <ul class="contact-details">
-                        <li>
-                            <div class="contact-icon" aria-hidden="true">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <span class="contact-label"><?php esc_html_e('Telefon', 'flyrec'); ?></span>
-                                <a href="tel:<?php echo esc_attr(preg_replace('/\s/', '', $contact_phone)); ?>" class="contact-value">
-                                    <?php echo esc_html($contact_phone); ?>
-                                </a>
-                            </div>
-                        </li>
                         <li>
                             <div class="contact-icon" aria-hidden="true">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -342,20 +417,6 @@ $contact_loc   = $i18n_content['location'];
                             </div>
                         </li>
                     </ul>
-
-                    <?php $whatsapp_digits = preg_replace('/[^0-9]/', '', $contact_phone); ?>
-                    <?php if ($whatsapp_digits) : ?>
-                        <a href="https://wa.me/<?php echo esc_attr($whatsapp_digits); ?>"
-                            class="btn btn--whatsapp"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path d="M17.47 14.38c-.29-.15-1.73-.85-2-.95-.27-.1-.46-.15-.66.15-.2.29-.76.95-.93 1.14-.17.2-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.71-1.6-2-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.08-.15-.66-1.58-.9-2.17-.24-.57-.48-.5-.66-.5-.17-.01-.37-.01-.56-.01-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43 0 1.43 1.05 2.82 1.19 3.01.15.2 2.06 3.15 5 4.42.7.3 1.25.48 1.67.61.7.22 1.34.19 1.85.12.56-.08 1.73-.71 1.98-1.39.24-.68.24-1.27.17-1.39-.07-.12-.26-.2-.55-.34z" />
-                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.15A8.14 8.14 0 013.85 12 8.15 8.15 0 1112 20.15z" />
-                            </svg>
-                            <?php esc_html_e('Piši nam na WhatsApp', 'flyrec'); ?>
-                        </a>
-                    <?php endif; ?>
                 </div><!-- /contact-info -->
 
                 <!-- Desna strana: Kontakt / rezervacija forma -->
