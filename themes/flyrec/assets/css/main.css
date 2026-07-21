@@ -1747,12 +1747,13 @@ a.contact-value:hover { color: var(--accent); }
 [data-theme="light"] .logo-fly,
 [data-theme="light"] .logo-rec            { color: #111111; }
 
-/* ── LIGHT: Sekcija naslovi (bela → tamna) ── */
+/* ── LIGHT: Sekcija naslovi (bela → tamna) ──
+   Napomena: .footer-heading namerno NIJE ovde – footer pozadina
+   (#050505) ostaje tamna u obe teme, pa naslov mora ostati beo. */
 [data-theme="light"] .section-title,
 [data-theme="light"] .service-title,
 [data-theme="light"] .benefit-content h3,
-[data-theme="light"] .process-title,
-[data-theme="light"] .footer-heading { color: #111111; }
+[data-theme="light"] .process-title { color: #111111; }
 
 /* ── LIGHT: Usluge – kartice ─────────────── */
 [data-theme="light"] .service-card {
