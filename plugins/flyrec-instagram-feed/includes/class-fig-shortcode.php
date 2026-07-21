@@ -224,7 +224,8 @@ class Fig_Shortcode {
              aria-label="<?php echo esc_attr( 'instagram' === $click_action ? __( 'Otvori na Instagramu', 'flyrec-instagram-feed' ) : __( 'Pogledaj objavu', 'flyrec-instagram-feed' ) ); ?>">
 
             <?php if ( $thumb ) : ?>
-                <img src="<?php echo esc_url( $thumb ); ?>" alt="" class="fig-item-thumb" loading="lazy" decoding="async">
+                <img src="<?php echo esc_url( $thumb ); ?>" alt="" class="fig-item-thumb" loading="lazy" decoding="async"
+                     onerror="this.onerror=null;this.removeAttribute('src');this.classList.add('fig-item-thumb--placeholder');">
             <?php else : ?>
                 <div class="fig-item-thumb fig-item-thumb--placeholder"></div>
             <?php endif; ?>
