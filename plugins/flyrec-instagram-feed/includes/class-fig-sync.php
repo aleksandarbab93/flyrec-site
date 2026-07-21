@@ -42,7 +42,15 @@ class Fig_Sync {
         }
 
         $settings = Fig_Helpers::get_settings();
-        $limit    = max( 1, min( 50, (int) $settings['items_limit'] + 10 ) ); // malo veći buffer za filtriranje po tipu
+
+        // Instagramovi CDN linkovi (media_url/thumbnail_url) su potpisani i
+        // vremenski ograničeni — jednom kad istaknu, slika trajno propadne
+        // dok se taj post ponovo ne sinhronizuje. Zato prozor za fetch mora
+        // pokriti BAR onoliko objava koliko već imamo sinhronizovano, inače
+        // najstarije objave ispadnu iz svakog budućeg sync-a i nikad se više
+        // ne osvežavaju (čak i ako je "Broj prikazanih objava" podešen nisko).
+        $already_synced = wp_count_posts( Fig_CPT::POST_TYPE )->publish ?? 0;
+        $limit = max( 1, min( 50, max( (int) $settings['items_limit'] + 10, (int) $already_synced + 5 ) ) );
 
         $client   = new Fig_Api_Client();
         $result   = $client->get_media( $limit );
