@@ -3,7 +3,7 @@
  * Plugin Name:       Flyrec Instagram Feed
  * Plugin URI:        https://flyrec.rs
  * Description:       Automatski prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa poslovnog Flyrec Instagram naloga na sajtu, preko zvaničnog Instagram Graph API-ja. Bez scrapinga.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Flyrec
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // =============================================
 // KONSTANTE
 // =============================================
-define( 'FIG_VERSION', '1.0.0' );
+define( 'FIG_VERSION', '1.1.0' );
 define( 'FIG_FILE', __FILE__ );
 define( 'FIG_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FIG_URL', plugin_dir_url( __FILE__ ) );
