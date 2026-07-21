@@ -6,12 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flyrec Instagram Feed 1.0.0\n"
 "Report-Msgid-Bugs-To: info@flyrec.rs\n"
-"POT-Creation-Date: 2026-07-14 08:30+0000\n"
+"POT-Creation-Date: 2026-07-21 15:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sr_RS\n"
 "X-Generator: Flyrec POT Generator\n"
+
+#: includes/class-fig-shortcode.php:242
+msgid "%s pregleda"
+msgstr ""
 
 #: admin/views/settings-page.php:28
 msgid "1. Konekcija sa Instagram nalogom"
@@ -25,11 +29,11 @@ msgstr ""
 msgid "3. Prikaz na sajtu"
 msgstr ""
 
-#: admin/views/settings-page.php:172
+#: admin/views/settings-page.php:176
 msgid "4. Napredno"
 msgstr ""
 
-#: admin/views/settings-page.php:204
+#: admin/views/settings-page.php:208
 msgid "5. Prikaz na stranici"
 msgstr ""
 
@@ -37,11 +41,11 @@ msgstr ""
 msgid "Access Token"
 msgstr ""
 
-#: admin/views/settings-page.php:166
+#: admin/views/settings-page.php:170
 msgid "Ako embed nije dostupan (nedostaje App ID/Secret ili API greška), sajt automatski pada nazad na link ka Instagramu."
 msgstr ""
 
-#: admin/views/settings-page.php:185
+#: admin/views/settings-page.php:189
 msgid "Ako je isključeno (podrazumevano), sinhronizovane objave ostaju u bazi i posle deinstalacije."
 msgstr ""
 
@@ -90,11 +94,11 @@ msgstr ""
 msgid "Direktan link ka Instagramu"
 msgstr ""
 
-#: admin/views/settings-page.php:164
+#: admin/views/settings-page.php:168
 msgid "Direktan link ka Instagramu (nova kartica)"
 msgstr ""
 
-#: admin/views/settings-page.php:211
+#: admin/views/settings-page.php:215
 msgid "Dostupan je i Gutenberg blok \"Flyrec Instagram Feed\" (kategorija Widgets) sa istim opcijama kroz vizuelni editor."
 msgstr ""
 
@@ -103,7 +107,7 @@ msgstr ""
 msgid "Dva puta dnevno"
 msgstr ""
 
-#: includes/class-fig-api-client.php:129
+#: includes/class-fig-api-client.php:155
 msgid "Embed nije podešen (nedostaje Instagram App ID/Secret)."
 msgstr ""
 
@@ -131,11 +135,11 @@ msgstr ""
 msgid "Fotografije"
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:96
+#: includes/class-fig-admin-settings.php:97
 msgid "Gotovo."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:91
+#: includes/class-fig-admin-settings.php:92
 msgid "Greška pri povezivanju."
 msgstr ""
 
@@ -143,7 +147,7 @@ msgstr ""
 msgid "Greška pri čuvanju redosleda — pokušaj ponovo."
 msgstr ""
 
-#: includes/class-fig-api-client.php:173
+#: includes/class-fig-api-client.php:199
 msgid "Instagram API je vratio HTTP status %d."
 msgstr ""
 
@@ -151,7 +155,7 @@ msgstr ""
 msgid "Instagram API je vratio neočekivan odgovor pri proveri naloga."
 msgstr ""
 
-#: admin/views/settings-page.php:175
+#: admin/views/settings-page.php:179
 msgid "Instagram App ID"
 msgstr ""
 
@@ -171,7 +175,7 @@ msgstr ""
 msgid "Instagram access token je istekao. Poveži nalog ponovo u podešavanjima."
 msgstr ""
 
-#: includes/class-fig-api-client.php:147
+#: includes/class-fig-api-client.php:173
 msgid "Instagram access token nije podešen."
 msgstr ""
 
@@ -183,12 +187,16 @@ msgstr ""
 msgid "Instagram nalog nije povezan."
 msgstr ""
 
+#: includes/class-fig-api-client.php:136
+msgid "Instagram nije vratio podatak o pregledima."
+msgstr ""
+
 #: includes/class-fig-cpt.php:30
-#: includes/class-fig-helpers.php:67
+#: includes/class-fig-helpers.php:68
 msgid "Instagram objava"
 msgstr ""
 
-#: includes/class-fig-helpers.php:66
+#: includes/class-fig-helpers.php:67
 msgid "Instagram objava – %s"
 msgstr ""
 
@@ -225,19 +233,19 @@ msgstr ""
 msgid "Manji broj = prikazuje se pre ostalih. Nedirnute objave imaju veliku podrazumevanu vrednost — postavi manji broj (1, 2, 3...) da izdvojiš objavu na vrh. Lakše je prevući objave direktno u listi ispod (drag & drop)."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:94
+#: includes/class-fig-admin-settings.php:95
 msgid "Mrežna greška pri osvežavanju tokena."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:92
+#: includes/class-fig-admin-settings.php:93
 msgid "Mrežna greška pri povezivanju."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:93
+#: includes/class-fig-admin-settings.php:94
 msgid "Mrežna greška pri sinhronizaciji."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:95
+#: includes/class-fig-admin-settings.php:96
 msgid "Mrežna greška."
 msgstr ""
 
@@ -281,11 +289,11 @@ msgstr ""
 msgid "Nemate dozvolu za ovu akciju."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:103
+#: includes/class-fig-admin-settings.php:104
 msgid "Nemate dozvolu za pristup ovoj stranici."
 msgstr ""
 
-#: includes/class-fig-api-client.php:165
+#: includes/class-fig-api-client.php:191
 msgid "Nepoznata Instagram API greška."
 msgstr ""
 
@@ -297,11 +305,11 @@ msgstr ""
 msgid "Obrisano %d sinhronizovanih objava. Pokreni sinhronizaciju ponovo kad želiš."
 msgstr ""
 
-#: admin/views/settings-page.php:198
+#: admin/views/settings-page.php:202
 msgid "Obriši sve podatke i sinhronizuj ponovo"
 msgstr ""
 
-#: admin/views/settings-page.php:183
+#: admin/views/settings-page.php:187
 msgid "Obriši sve sinhronizovane objave i podešavanja kada se plugin potpuno deinstalira"
 msgstr ""
 
@@ -314,11 +322,11 @@ msgid "Osveži token sada"
 msgstr ""
 
 #: includes/class-fig-shortcode.php:42
-#: includes/class-fig-shortcode.php:224
+#: includes/class-fig-shortcode.php:226
 msgid "Otvori na Instagramu"
 msgstr ""
 
-#: admin/views/settings-page.php:208
+#: admin/views/settings-page.php:212
 msgid "Parametri su opcioni — bez njih se koriste podešavanja sa ove stranice. type: reels, video, image, carousel_album ili all (odvojeno zarezom za više tipova)."
 msgstr ""
 
@@ -332,11 +340,11 @@ msgid "Podešavanja feed-a"
 msgstr ""
 
 #: includes/class-fig-cpt.php:33
-#: includes/class-fig-shortcode.php:224
+#: includes/class-fig-shortcode.php:226
 msgid "Pogledaj objavu"
 msgstr ""
 
-#: admin/views/settings-page.php:197
+#: admin/views/settings-page.php:201
 msgid "Pogledaj sinhronizovane objave"
 msgstr ""
 
@@ -344,13 +352,13 @@ msgstr ""
 msgid "Pogledajte na Instagramu"
 msgstr ""
 
-#: admin/views/settings-page.php:159
+#: admin/views/settings-page.php:163
 msgid "Ponašanje nakon klika (podrazumevano)"
 msgstr ""
 
 #: blocks/instagram-feed/block.js:67
 #: includes/class-fig-elementor-widget.php:71
-#: admin/views/settings-page.php:163
+#: admin/views/settings-page.php:167
 msgid "Popup sa Instagram embed-om"
 msgstr ""
 
@@ -359,7 +367,7 @@ msgstr ""
 msgid "Popup/lightbox"
 msgstr ""
 
-#: admin/views/settings-page.php:162
+#: admin/views/settings-page.php:166
 msgid "Popup/lightbox na sajtu"
 msgstr ""
 
@@ -387,7 +395,7 @@ msgstr ""
 msgid "Prevuci za promenu redosleda"
 msgstr ""
 
-#: admin/views/settings-page.php:179
+#: admin/views/settings-page.php:183
 msgid "Pri deinstalaciji plugina"
 msgstr ""
 
@@ -400,6 +408,10 @@ msgstr ""
 msgid "Prikazuje najnovije Instagram objave (Reels, video, foto, carousel) sa povezanog naloga."
 msgstr ""
 
+#: admin/views/settings-page.php:158
+msgid "Prikaži broj pregleda (samo za Reels)"
+msgstr ""
+
 #: admin/views/settings-page.php:154
 msgid "Prikaži datum objave"
 msgstr ""
@@ -408,7 +420,7 @@ msgstr ""
 msgid "Prikaži kratak opis (caption)"
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:89
+#: includes/class-fig-admin-settings.php:90
 msgid "Radim…"
 msgstr ""
 
@@ -447,23 +459,23 @@ msgstr ""
 msgid "Sačuvaj i poveži"
 msgstr ""
 
-#: admin/views/settings-page.php:190
+#: admin/views/settings-page.php:194
 msgid "Sačuvaj podešavanja"
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:88
+#: includes/class-fig-admin-settings.php:89
 msgid "Sigurno želite da obrišete sve sinhronizovane objave? Ova akcija se ne može poništiti."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:87
+#: includes/class-fig-admin-settings.php:88
 msgid "Sigurno želite da prekinete vezu sa Instagram nalogom?"
 msgstr ""
 
-#: includes/class-fig-sync.php:71
+#: includes/class-fig-sync.php:79
 msgid "Sinhronizovano %1$d objava (%2$d novih, %3$d ažuriranih)."
 msgstr ""
 
-#: admin/views/settings-page.php:196
+#: admin/views/settings-page.php:200
 msgid "Sinhronizuj sada"
 msgstr ""
 
@@ -506,7 +518,7 @@ msgstr ""
 msgid "Token se generiše kroz Metin zvanični Graph API Explorer (developers.facebook.com) — pogledaj README.md u folderu plugina za korak-po-korak uputstvo. Token se čuva enkriptovan i nikad se ne prikazuje na sajtu."
 msgstr ""
 
-#: includes/class-fig-admin-settings.php:90
+#: includes/class-fig-admin-settings.php:91
 msgid "Unesite access token pre povezivanja."
 msgstr ""
 
@@ -541,11 +553,11 @@ msgstr ""
 msgid "Video se ne može prikazati ovde."
 msgstr ""
 
-#: admin/views/settings-page.php:205
+#: admin/views/settings-page.php:209
 msgid "Zalepi shortcode na bilo koju stranicu ili post:"
 msgstr ""
 
-#: includes/class-fig-shortcode.php:260
+#: includes/class-fig-shortcode.php:273
 msgid "Zatvori"
 msgstr ""
 
@@ -561,7 +573,7 @@ msgstr ""
 msgid "opciono"
 msgstr ""
 
-#: admin/views/settings-page.php:175
+#: admin/views/settings-page.php:179
 msgid "opciono, samo za embed prikaz"
 msgstr ""
 

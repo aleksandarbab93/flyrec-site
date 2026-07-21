@@ -101,6 +101,26 @@
     background: rgba(0, 0, 0, 0.4);
 }
 
+.fig-item-views {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 600;
+    line-height: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .fig-item-overlay {
     position: absolute;
     inset: 0;

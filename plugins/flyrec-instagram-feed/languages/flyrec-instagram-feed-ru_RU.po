@@ -415,3 +415,12 @@ msgstr "📷 Детали публикации Instagram"
 msgid "📸 Flyrec Instagram Feed"
 msgstr "📸 Flyrec Instagram Feed"
 
+
+msgid "%s pregleda"
+msgstr "%s просмотров"
+
+msgid "Instagram nije vratio podatak o pregledima."
+msgstr "Instagram не вернул данные о просмотрах."
+
+msgid "Prikaži broj pregleda (samo za Reels)"
+msgstr "Показывать количество просмотров (только Reels)"

@@ -40,6 +40,7 @@ class Fig_Helpers {
             'content_types'      => [ 'REELS', 'VIDEO', 'IMAGE', 'CAROUSEL_ALBUM' ],
             'show_caption'       => true,
             'show_date'          => true,
+            'show_views'         => true,
             'click_action'       => 'lightbox', // lightbox | instagram | embed
             'columns'            => 4,
             'delete_on_uninstall'=> false,
@@ -85,5 +86,18 @@ class Fig_Helpers {
     /** Da li je trenutni korisnik ovlašćen da menja podešavanja plugina. */
     public static function current_user_can_manage() {
         return current_user_can( 'manage_options' );
+    }
+
+    /** Skraćen prikaz broja pregleda (1234 → 1.2K, 1500000 → 1.5M). */
+    public static function format_count( $number ) {
+        $number = (int) $number;
+
+        if ( $number >= 1000000 ) {
+            return rtrim( rtrim( number_format( $number / 1000000, 1 ), '0' ), '.' ) . 'M';
+        }
+        if ( $number >= 1000 ) {
+            return rtrim( rtrim( number_format( $number / 1000, 1 ), '0' ), '.' ) . 'K';
+        }
+        return (string) $number;
     }
 }

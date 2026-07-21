@@ -211,6 +211,8 @@ class Fig_Shortcode {
         $timestamp     = (int) get_post_meta( $post->ID, '_fig_timestamp', true );
         $caption       = get_post_field( 'post_content', $post );
         $is_vertical   = in_array( $content_type, [ 'REELS', 'VIDEO' ], true );
+        $views         = get_post_meta( $post->ID, '_fig_views', true );
+        $show_views    = $settings['show_views'] && 'REELS' === $content_type && '' !== $views;
 
         ob_start();
         ?>
@@ -233,6 +235,16 @@ class Fig_Shortcode {
             <span class="fig-item-play" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21"/></svg>
             </span>
+
+            <?php if ( $show_views ) : ?>
+                <span class="fig-item-views" aria-label="<?php
+                    /* translators: %s: view count */
+                    echo esc_attr( sprintf( __( '%s pregleda', 'flyrec-instagram-feed' ), Fig_Helpers::format_count( $views ) ) );
+                ?>">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 7.61 17 4.5 12 4.5zm0 12.5a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg>
+                    <?php echo esc_html( Fig_Helpers::format_count( $views ) ); ?>
+                </span>
+            <?php endif; ?>
 
             <?php if ( $settings['show_caption'] || $settings['show_date'] ) : ?>
                 <div class="fig-item-overlay">

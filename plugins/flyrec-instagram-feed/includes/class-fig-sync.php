@@ -66,7 +66,7 @@ class Fig_Sync {
             if ( empty( $item['id'] ) ) {
                 continue;
             }
-            $is_new = self::upsert_media_item( $item );
+            $is_new = self::upsert_media_item( $item, $client );
             $is_new ? $created++ : $updated++;
         }
 
@@ -92,7 +92,7 @@ class Fig_Sync {
      *
      * @return bool true ako je post NOVO kreiran, false ako je samo ažuriran.
      */
-    private static function upsert_media_item( array $item ) {
+    private static function upsert_media_item( array $item, Fig_Api_Client $client ) {
         $media_id     = sanitize_text_field( $item['id'] );
         $existing_id  = Fig_CPT::find_by_media_id( $media_id );
         $timestamp    = ! empty( $item['timestamp'] ) ? strtotime( $item['timestamp'] ) : time();
@@ -135,6 +135,17 @@ class Fig_Sync {
         update_post_meta( $post_id, '_fig_thumbnail_url', esc_url_raw( $item['thumbnail_url'] ?? ( $item['media_url'] ?? '' ) ) );
         update_post_meta( $post_id, '_fig_timestamp', $timestamp );
         update_post_meta( $post_id, '_fig_synced_at', time() );
+
+        // Broj pregleda – samo za Reels (insights endpoint ne podržava ovu
+        // metriku za obične fotografije). Ćutljivo se preskače pri grešci
+        // (npr. prestara objava, privremeni API problem) – zadržava se
+        // prethodna vrednost umesto da nestane sa sajta zbog jednog neuspeha.
+        if ( 'REELS' === $content_type ) {
+            $views = $client->get_media_views( $media_id );
+            if ( ! is_wp_error( $views ) ) {
+                update_post_meta( $post_id, '_fig_views', $views );
+            }
+        }
 
         if ( ! empty( $item['children']['data'] ) && is_array( $item['children']['data'] ) ) {
             $children = array_map( function ( $child ) {

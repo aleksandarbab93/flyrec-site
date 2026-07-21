@@ -149,9 +149,13 @@ $content_types = Fig_Helpers::content_types();
                             <input type="checkbox" name="fig_settings[show_caption]" value="1" <?php checked( $settings['show_caption'] ); ?>>
                             <?php esc_html_e( 'Prikaži kratak opis (caption)', 'flyrec-instagram-feed' ); ?>
                         </label>
-                        <label style="display:block;">
+                        <label style="display:block;margin-bottom:6px;">
                             <input type="checkbox" name="fig_settings[show_date]" value="1" <?php checked( $settings['show_date'] ); ?>>
                             <?php esc_html_e( 'Prikaži datum objave', 'flyrec-instagram-feed' ); ?>
+                        </label>
+                        <label style="display:block;">
+                            <input type="checkbox" name="fig_settings[show_views]" value="1" <?php checked( $settings['show_views'] ); ?>>
+                            <?php esc_html_e( 'Prikaži broj pregleda (samo za Reels)', 'flyrec-instagram-feed' ); ?>
                         </label>
                     </td>
                 </tr>

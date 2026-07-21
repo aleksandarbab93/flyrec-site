@@ -65,6 +65,7 @@ class Fig_Admin_Settings {
             'content_types'       => $content_types,
             'show_caption'        => ! empty( $input['show_caption'] ),
             'show_date'           => ! empty( $input['show_date'] ),
+            'show_views'          => ! empty( $input['show_views'] ),
             'click_action'        => in_array( $input['click_action'] ?? '', $allowed_clicks, true ) ? $input['click_action'] : 'lightbox',
             'columns'             => max( 1, min( 6, absint( $input['columns'] ?? 4 ) ) ),
             'delete_on_uninstall' => ! empty( $input['delete_on_uninstall'] ),

@@ -114,6 +114,32 @@ class Fig_Api_Client {
     }
 
     /**
+     * Broj pregleda (views) za jedan Reels media objekat.
+     * Poziva se samo tokom sync-a (jednom po objavi), nikad na frontend
+     * render — da se ne troši API budžet na svaki prikaz stranice.
+     *
+     * @return int|WP_Error
+     */
+    public function get_media_views( $media_id ) {
+        $response = $this->request( 'GET', FIG_GRAPH_HOST . '/' . rawurlencode( $media_id ) . '/insights', [
+            'metric'       => 'views',
+            'access_token' => $this->token,
+        ] );
+
+        if ( is_wp_error( $response ) ) {
+            return $response;
+        }
+
+        $value = $response['data'][0]['values'][0]['value'] ?? null;
+
+        if ( null === $value ) {
+            return new WP_Error( 'fig_no_views_data', __( 'Instagram nije vratio podatak o pregledima.', 'flyrec-instagram-feed' ) );
+        }
+
+        return (int) $value;
+    }
+
+    /**
      * Zvanični Instagram oEmbed — koristi se samo kad korisnik klikne na
      * objavu i otvori popup (lazy), nikad na inicijalno učitavanje grida.
      *
