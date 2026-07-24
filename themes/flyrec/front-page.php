@@ -43,6 +43,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
             if ($hero_youtube_embed) : ?>
                 <div class="hero-youtube-wrapper" aria-hidden="true">
                     <iframe
+                        id="flyrecHeroYoutube"
                         src="<?php echo esc_url($hero_youtube_embed); ?>"
                         title=""
                         frameborder="0"
@@ -50,6 +51,19 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                         tabindex="-1"
                         aria-hidden="true"></iframe>
                 </div>
+                <?php if ($hero_image) : ?>
+                    <!-- Prekriva YouTube iframe prvih par sekundi (dok autoplay krene i
+                         dok eventualni Chrome media-control "flash" prođe), pa nestaje
+                         uz fade – vidi initHeroYoutubeLoop() u main.js -->
+                    <div class="hero-video-cover" id="flyrecHeroCover" aria-hidden="true">
+                        <img
+                            src="<?php echo esc_url($hero_image); ?>"
+                            alt=""
+                            class="hero-image"
+                            loading="eager"
+                            decoding="async">
+                    </div>
+                <?php endif; ?>
             <?php elseif ($hero_image) : ?>
                 <div class="hero-image-wrapper" aria-hidden="true">
                     <img

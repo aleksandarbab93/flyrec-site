@@ -327,11 +327,15 @@ function flyrec_get_hero_youtube_embed( $url ) {
         return '';
     }
     $id = $m[1];
+    // Napomena: NEMA loop/playlist parametra ovde namerno – kombinacija
+    // loop=1&playlist=ID navodi YouTube da video tretira kao "plejlistu",
+    // pa Android Chrome onda prikazuje prev/next dugmad (Media Session
+    // kontrole) preko videa. Loop se umesto toga radi preko JS API-ja
+    // (vidi flyrec_get_hero_youtube_embed poziv u front-page.php + main.js)
+    // – tako YouTube nikad ne dobije "plejlist" kontekst.
     return 'https://www.youtube.com/embed/' . $id . '?' . http_build_query( [
         'autoplay'       => 1,
         'mute'           => 1,
-        'loop'           => 1,
-        'playlist'       => $id, // potrebno da bi loop=1 radio za jedan video
         'controls'       => 0,
         'showinfo'       => 0,
         'rel'            => 0,
@@ -339,7 +343,7 @@ function flyrec_get_hero_youtube_embed( $url ) {
         'iv_load_policy' => 3,
         'disablekb'      => 1,
         'playsinline'    => 1,
-        'enablejsapi'    => 0,
+        'enablejsapi'    => 1,
     ] );
 }
 

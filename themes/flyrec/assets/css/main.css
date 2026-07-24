@@ -425,6 +425,21 @@ h1, h2, h3, h4 {
     border: none;
 }
 
+/* Slika-prekrivač preko YouTube videa (prvih par sekundi, dok se autoplay
+   ustali), zatim nestaje uz fade – JS dodaje .hero-video-cover--hide */
+.hero-video-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 1.4s ease;
+    pointer-events: none;
+}
+
+.hero-video-cover--hide {
+    opacity: 0;
+}
+
 /* Slika pozadina */
 .hero-image-wrapper {
     position: absolute;

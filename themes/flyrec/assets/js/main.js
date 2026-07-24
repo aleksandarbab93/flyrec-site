@@ -18,7 +18,47 @@
         initContactForm();
         initPortfolioLightbox();
         initSmoothScroll();
+        initHeroYoutubeLoop();
     });
+
+    // =============================================
+    // HERO YOUTUBE – loop preko JS API-ja (bez playlist parametra)
+    // Namerno ne koristimo URL parametre loop=1&playlist=ID jer to YouTube
+    // tretira kao plejlistu, pa Android Chrome onda prikazuje prev/next
+    // dugmad (Media Session kontrole) preko videa. Umesto toga, kad se
+    // video završi ručno ga vraćamo na početak i pokrećemo ponovo.
+    // =============================================
+    function initHeroYoutubeLoop() {
+        var iframe = document.getElementById('flyrecHeroYoutube');
+        if (!iframe) return;
+
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+
+        window.onYouTubeIframeAPIReady = function () {
+            new window.YT.Player('flyrecHeroYoutube', {
+                events: {
+                    onStateChange: function (e) {
+                        if (e.data === window.YT.PlayerState.ENDED) {
+                            e.target.seekTo(0);
+                            e.target.playVideo();
+                        }
+                    }
+                }
+            });
+        };
+
+        // Prvih 5 sekundi prekrivamo video hero slikom (dok autoplay krene i
+        // dok eventualno Chrome-ovo play/pause dugme bude vidljivo preko
+        // videa), pa slika nestaje uz fade i ostaje čist video.
+        var cover = document.getElementById('flyrecHeroCover');
+        if (cover) {
+            setTimeout(function () {
+                cover.classList.add('hero-video-cover--hide');
+            }, 5000);
+        }
+    }
 
     // =============================================
     // 1. NAVIGACIJA – Hamburger + scroll efekti
