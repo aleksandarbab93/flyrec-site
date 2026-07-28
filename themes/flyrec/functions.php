@@ -62,6 +62,40 @@ add_action( 'wp_head', function () {
 } );
 
 // =============================================
+// TWITTER/X CARD META TAGOVI
+// Twitter po specifikaciji čita og:title/og:description/og:image kad nema
+// twitter:-specifičnih tagova, pa Yoast (namerno, po dizajnu – vidi
+// generate_twitter_title() u indexable-presentation.php) te tagove ostavlja
+// prazne kad su OG tagovi već postavljeni. Neki SEO alati (npr. Seobility)
+// ipak očekuju eksplicitne twitter: tagove u markupu, pa ih ovde ispisujemo
+// ručno, ogledalo od već izračunatih og: vrednosti.
+// =============================================
+add_action( 'wp_head', function () {
+    if ( ! function_exists( 'YoastSEO' ) ) return;
+
+    $meta = YoastSEO()->meta->for_current_page();
+    if ( ! $meta ) return;
+
+    $title       = $meta->twitter_title ?: $meta->open_graph_title;
+    $description = $meta->twitter_description ?: $meta->open_graph_description;
+    $image       = $meta->twitter_image;
+    if ( ! $image && ! empty( $meta->open_graph_images ) ) {
+        $first_image = reset( $meta->open_graph_images );
+        $image       = $first_image['url'] ?? '';
+    }
+
+    if ( $title ) {
+        printf( '<meta name="twitter:title" content="%s" />' . "\n", esc_attr( $title ) );
+    }
+    if ( $description ) {
+        printf( '<meta name="twitter:description" content="%s" />' . "\n", esc_attr( $description ) );
+    }
+    if ( $image ) {
+        printf( '<meta name="twitter:image" content="%s" />' . "\n", esc_url( $image ) );
+    }
+}, 20 );
+
+// =============================================
 // THEME SETUP
 // =============================================
 function flyrec_setup() {
@@ -592,6 +626,22 @@ function flyrec_get_auto_thumbnail( $url, $type ) {
 
     // Instagram: oEmbed API zahteva autorizaciju od 2020 → ne pokušavamo
     return '';
+}
+
+// Helper: nađi WebP verziju slike (isto ime, .webp ekstenzija) ako postoji
+// na disku – koristi se za <picture> u hero sekciji da se manji WebP
+// posluži modernim browserima, uz original kao fallback.
+function flyrec_get_webp_url( $image_url ) {
+    if ( ! $image_url ) return '';
+
+    $webp_url = preg_replace( '/\.(jpe?g|png)$/i', '.webp', $image_url, 1 );
+    if ( $webp_url === $image_url ) return '';
+
+    $upload_dir = wp_upload_dir();
+    if ( 0 !== strpos( $webp_url, $upload_dir['baseurl'] ) ) return '';
+
+    $webp_path = $upload_dir['basedir'] . substr( $webp_url, strlen( $upload_dir['baseurl'] ) );
+    return file_exists( $webp_path ) ? $webp_url : '';
 }
 
 // Helper: auto-detektuj tip videa iz URL-a (koristi se i u PHP i JS)

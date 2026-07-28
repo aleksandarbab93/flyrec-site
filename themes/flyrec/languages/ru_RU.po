@@ -52,8 +52,8 @@ msgstr "Адрес email"
 msgid "Facebook"
 msgstr "Facebook"
 
-msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija."
-msgstr "Кинематографичное видео и фотосъёмка природы, туристических локаций и различных направлений."
+msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predela — sadržaj pogodan za turističku promociju i društvene mreže."
+msgstr "Кинематографичное видео и фотосъёмка природы, туристических локаций и направлений по всей Черногории — от Боко-Которского залива до горных пейзажей — контент, подходящий для туристического продвижения и социальных сетей."
 
 msgid "FlyRec"
 msgstr "FlyRec"
@@ -69,6 +69,12 @@ msgstr "FlyRec – Главная"
 
 msgid "Flyrec kroz fotografiju i video pretvara trenutke, prostore i pejzaže u vizuelne priče. Fokusirani smo na kvalitet, kreativnost i sadržaj prilagođen savremenim digitalnim platformama."
 msgstr "Flyrec превращает моменты, пространства и пейзажи в визуальные истории с помощью фото и видео. Мы делаем акцент на качестве, креативности и контенте, адаптированном под современные цифровые платформы."
+
+msgid "Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti — u saradnji sa agencijama za nekretnine, organizatorima događaja, turističkim operaterima i brendovima kojima je potrebna snimka iz vazduha."
+msgstr "Мы работаем по всей Черногории — от Боко-Которского залива и Будванской ривьеры до Подгорицы и внутренних районов — сотрудничая с агентствами недвижимости, организаторами мероприятий, туроператорами и брендами, которым нужна аэросъёмка."
+
+msgid "Svaki projekat počinje razgovorom o cilju snimanja — bilo da je reč o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu."
+msgstr "Каждый проект начинается с разговора о цели съёмки — будь то промо-видео, презентация недвижимости или съёмка мероприятия — после чего мы планируем полёт, снимаем и передаём готовый, смонтированный материал, готовый для сайта, соцсетей или печати."
 
 msgid "Footer Navigacija"
 msgstr "Навигация в подвале"
@@ -256,8 +262,8 @@ msgstr "Основная навигация"
 msgid "Primarna navigacija"
 msgstr "Основная навигация"
 
-msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina."
-msgstr "Профессиональная презентация квартир, домов, коммерческих помещений и другой недвижимости."
+msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori."
+msgstr "Профессиональная презентация квартир, домов, коммерческих помещений и другой недвижимости — аэросъёмка и наземные кадры, которые показывают локацию и атмосферу в лучшем свете, идеально для объявлений и агентств недвижимости в Черногории."
 
 msgid "Profesionalni Drone Studio"
 msgstr "Профессиональная дрон-студия"

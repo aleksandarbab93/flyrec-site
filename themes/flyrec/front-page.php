@@ -11,6 +11,7 @@ get_header();
 $hero_bg_type  = get_theme_mod('flyrec_hero_bg_type',    'video');
 $hero_video    = get_theme_mod('flyrec_hero_video_url',  '');
 $hero_image    = get_theme_mod('flyrec_hero_image_url',  '');
+$hero_image_webp = flyrec_get_webp_url($hero_image);
 
 // Video ima prioritet ako je postavljen; ako nema videa, koristi se slika (fallback)
 $hero_video_type = $hero_video ? flyrec_detect_video_type($hero_video) : '';
@@ -56,22 +57,32 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                          dok eventualni Chrome media-control "flash" prođe), pa nestaje
                          uz fade – vidi initHeroYoutubeLoop() u main.js -->
                     <div class="hero-video-cover" id="flyrecHeroCover" aria-hidden="true">
+                        <picture>
+                            <?php if ($hero_image_webp) : ?>
+                                <source srcset="<?php echo esc_url($hero_image_webp); ?>" type="image/webp">
+                            <?php endif; ?>
+                            <img
+                                src="<?php echo esc_url($hero_image); ?>"
+                                alt=""
+                                class="hero-image"
+                                loading="eager"
+                                decoding="async">
+                        </picture>
+                    </div>
+                <?php endif; ?>
+            <?php elseif ($hero_image) : ?>
+                <div class="hero-image-wrapper" aria-hidden="true">
+                    <picture>
+                        <?php if ($hero_image_webp) : ?>
+                            <source srcset="<?php echo esc_url($hero_image_webp); ?>" type="image/webp">
+                        <?php endif; ?>
                         <img
                             src="<?php echo esc_url($hero_image); ?>"
                             alt=""
                             class="hero-image"
                             loading="eager"
                             decoding="async">
-                    </div>
-                <?php endif; ?>
-            <?php elseif ($hero_image) : ?>
-                <div class="hero-image-wrapper" aria-hidden="true">
-                    <img
-                        src="<?php echo esc_url($hero_image); ?>"
-                        alt=""
-                        class="hero-image"
-                        loading="eager"
-                        decoding="async">
+                    </picture>
                 </div>
             <?php endif;
         elseif ($show_hero_video) : ?>
@@ -89,12 +100,17 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
             </div>
         <?php elseif ($show_hero_image) : ?>
             <div class="hero-image-wrapper" aria-hidden="true">
-                <img
-                    src="<?php echo esc_url($hero_image); ?>"
-                    alt=""
-                    class="hero-image"
-                    loading="eager"
-                    decoding="async">
+                <picture>
+                    <?php if ($hero_image_webp) : ?>
+                        <source srcset="<?php echo esc_url($hero_image_webp); ?>" type="image/webp">
+                    <?php endif; ?>
+                    <img
+                        src="<?php echo esc_url($hero_image); ?>"
+                        alt=""
+                        class="hero-image"
+                        loading="eager"
+                        decoding="async">
+                </picture>
             </div>
         <?php endif; ?>
 
@@ -214,7 +230,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                     </div>
                     <h3 class="service-title"><?php esc_html_e('Nekretnine', 'flyrec'); ?></h3>
                     <p class="service-desc">
-                        <?php esc_html_e('Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina.', 'flyrec'); ?>
+                        <?php esc_html_e('Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori.', 'flyrec'); ?>
                     </p>
                 </div>
 
@@ -233,7 +249,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                     </div>
                     <h3 class="service-title"><?php esc_html_e('Pejzaži', 'flyrec'); ?></h3>
                     <p class="service-desc">
-                        <?php esc_html_e('Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija.', 'flyrec'); ?>
+                        <?php esc_html_e('Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predela — sadržaj pogodan za turističku promociju i društvene mreže.', 'flyrec'); ?>
                     </p>
                 </div>
 
@@ -363,6 +379,12 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                 <h2 class="section-title"><?php esc_html_e('O Flyrec-u', 'flyrec'); ?></h2>
                 <p class="about-text">
                     <?php esc_html_e('Flyrec kroz fotografiju i video pretvara trenutke, prostore i pejzaže u vizuelne priče. Fokusirani smo na kvalitet, kreativnost i sadržaj prilagođen savremenim digitalnim platformama.', 'flyrec'); ?>
+                </p>
+                <p class="about-text">
+                    <?php esc_html_e('Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti — u saradnji sa agencijama za nekretnine, organizatorima događaja, turističkim operaterima i brendovima kojima je potrebna snimka iz vazduha.', 'flyrec'); ?>
+                </p>
+                <p class="about-text">
+                    <?php esc_html_e('Svaki projekat počinje razgovorom o cilju snimanja — bilo da je reč o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu.', 'flyrec'); ?>
                 </p>
             </div>
         </div>

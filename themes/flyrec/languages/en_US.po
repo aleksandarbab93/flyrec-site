@@ -52,8 +52,8 @@ msgstr "Email address"
 msgid "Facebook"
 msgstr "Facebook"
 
-msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija."
-msgstr "Cinematic video and photography of nature, tourist locations and various destinations."
+msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predela — sadržaj pogodan za turističku promociju i društvene mreže."
+msgstr "Cinematic video and photography of nature, tourist locations and destinations across Montenegro — from the Bay of Kotor to the mountains — content suited for tourism promotion and social media."
 
 msgid "FlyRec"
 msgstr "FlyRec"
@@ -69,6 +69,12 @@ msgstr "FlyRec – Home"
 
 msgid "Flyrec kroz fotografiju i video pretvara trenutke, prostore i pejzaže u vizuelne priče. Fokusirani smo na kvalitet, kreativnost i sadržaj prilagođen savremenim digitalnim platformama."
 msgstr "Flyrec turns moments, spaces and landscapes into visual stories through photography and video. We focus on quality, creativity and content tailored to modern digital platforms."
+
+msgid "Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti — u saradnji sa agencijama za nekretnine, organizatorima događaja, turističkim operaterima i brendovima kojima je potrebna snimka iz vazduha."
+msgstr "We work across Montenegro — from the Bay of Kotor and the Budva riviera to Podgorica and the inland regions — partnering with real estate agencies, event organizers, tourism operators and brands that need aerial footage."
+
+msgid "Svaki projekat počinje razgovorom o cilju snimanja — bilo da je reč o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu."
+msgstr "Every project starts with a conversation about the goal of the shoot — whether it's a promotional video, a real estate presentation or documenting an event — after which we plan the flight, film and deliver a finished, edited piece ready for the web, social media or print."
 
 msgid "Footer Navigacija"
 msgstr "Footer Navigation"
@@ -256,8 +262,8 @@ msgstr "Primary Navigation"
 msgid "Primarna navigacija"
 msgstr "Primary navigation"
 
-msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina."
-msgstr "Professional presentation of apartments, houses, business premises and other real estate."
+msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori."
+msgstr "Professional presentation of apartments, houses, business premises and other real estate — aerial and ground shots that show the location and setting at their best, ideal for listings and real estate agencies in Montenegro."
 
 msgid "Profesionalni Drone Studio"
 msgstr "Professional Drone Studio"
