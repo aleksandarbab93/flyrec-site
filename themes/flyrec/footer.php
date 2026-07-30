@@ -16,7 +16,7 @@
                         </span>
                     <?php endif; ?>
                 </a>
-                <p class="footer-tagline"><?php esc_html_e( 'Cinematic snimanje dronom.', 'flyrec' ); ?><br><?php esc_html_e( 'Vaš svet iz nove perspektive.', 'flyrec' ); ?></p>
+                <p class="footer-tagline"><?php esc_html_e( 'Cinematic snimanje dronom.', 'flyrec' ); ?><br><?php esc_html_e( 'Vaš svijet iz nove perspektive.', 'flyrec' ); ?></p>
                 <div class="footer-social">
                     <?php $ig = get_theme_mod('flyrec_contact_instagram', 'https://instagram.com/flyrec'); ?>
                     <a href="<?php echo esc_url($ig); ?>" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="<?php esc_attr_e( 'Instagram', 'flyrec' ); ?>">

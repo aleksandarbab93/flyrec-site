@@ -163,7 +163,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                 <span class="section-label"><?php esc_html_e('Iz vazduha', 'flyrec'); ?></span>
                 <h2 class="section-title"><?php esc_html_e('Najnoviji snimci', 'flyrec'); ?></h2>
                 <p class="section-subtitle">
-                    <?php esc_html_e('Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha.', 'flyrec'); ?>
+                    <?php esc_html_e('Izbor naših najnovijih snimaka i trenutaka zabilježenih iz vazduha.', 'flyrec'); ?>
                 </p>
             </div>
 
@@ -230,7 +230,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                     </div>
                     <h3 class="service-title"><?php esc_html_e('Nekretnine', 'flyrec'); ?></h3>
                     <p class="service-desc">
-                        <?php esc_html_e('Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori.', 'flyrec'); ?>
+                        <?php esc_html_e('Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svjetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori.', 'flyrec'); ?>
                     </p>
                 </div>
 
@@ -249,7 +249,7 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                     </div>
                     <h3 class="service-title"><?php esc_html_e('Pejzaži', 'flyrec'); ?></h3>
                     <p class="service-desc">
-                        <?php esc_html_e('Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predela — sadržaj pogodan za turističku promociju i društvene mreže.', 'flyrec'); ?>
+                        <?php esc_html_e('Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predjela — sadržaj pogodan za turističku promociju i društvene mreže.', 'flyrec'); ?>
                     </p>
                 </div>
 
@@ -384,12 +384,94 @@ $youtube_channel = get_theme_mod('flyrec_youtube_channel', 'https://www.youtube.
                     <?php esc_html_e('Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti — u saradnji sa agencijama za nekretnine, organizatorima događaja, turističkim operaterima i brendovima kojima je potrebna snimka iz vazduha.', 'flyrec'); ?>
                 </p>
                 <p class="about-text">
-                    <?php esc_html_e('Svaki projekat počinje razgovorom o cilju snimanja — bilo da je reč o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu.', 'flyrec'); ?>
+                    <?php esc_html_e('Svaki projekat počinje razgovorom o cilju snimanja — bilo da je riječ o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu.', 'flyrec'); ?>
                 </p>
             </div>
         </div>
     </section>
     <!-- /O NAMA -->
+
+
+    <!-- =========================================
+         FAQ – Često postavljena pitanja (dodatni sadržaj za SEO)
+         ========================================= -->
+    <?php
+    $faq_items = array(
+        array(
+            'q' => __('Koliko unaprijed treba zakazati snimanje dronom?', 'flyrec'),
+            'a' => __('Preporučujemo da nas kontaktirate bar 5–7 dana unaprijed, posebno u sezoni (jun–septembar) kada je broj upita najveći. Za hitne termine, javite nam se i potrudićemo se da izađemo u susret u zavisnosti od trenutne dostupnosti i vremenskih uslova.', 'flyrec'),
+        ),
+        array(
+            'q' => __('Da li imate dozvolu za letenje dronom?', 'flyrec'),
+            'a' => __('Da, letimo u skladu sa važećim propisima o bespilotnim letjelicama u Crnoj Gori, uz sve potrebne dozvole i osiguranje. Prije svakog snimanja provjeravamo da li je lokacija u zoni leta bez ograničenja.', 'flyrec'),
+        ),
+        array(
+            'q' => __('Šta se dešava ako je vrijeme loše na dan snimanja?', 'flyrec'),
+            'a' => __('Snimanje dronom zavisi od vremenskih uslova poput vjetra, kiše i magle. Ako prognoza ne dozvoljava bezbjedan let, zajedno dogovaramo novi termin bez dodatne naknade.', 'flyrec'),
+        ),
+        array(
+            'q' => __('Koliko košta snimanje dronom?', 'flyrec'),
+            'a' => __('Cijena zavisi od tipa usluge (događaji, nekretnine, pejzaži), lokacije i dužine snimanja. Pošaljite nam upit preko kontakt forme sa detaljima projekta i dobićete ponudu prilagođenu vašim potrebama.', 'flyrec'),
+        ),
+        array(
+            'q' => __('U kojim dijelovima Crne Gore radite?', 'flyrec'),
+            'a' => __('Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti. Za snimanja van ove oblasti, kontaktirajte nas radi dogovora.', 'flyrec'),
+        ),
+        array(
+            'q' => __('Koliko brzo dobijamo gotov materijal nakon snimanja?', 'flyrec'),
+            'a' => __('U zavisnosti od obima projekta, montirani materijal isporučujemo obično u roku od 3 do 7 radnih dana od dana snimanja.', 'flyrec'),
+        ),
+    );
+    ?>
+    <section class="section section--faq" id="faq">
+        <div class="container">
+
+            <div class="section-header fade-up">
+                <span class="section-label"><?php esc_html_e('Pitanja i odgovori', 'flyrec'); ?></span>
+                <h2 class="section-title"><?php esc_html_e('Često postavljena pitanja', 'flyrec'); ?></h2>
+                <p class="section-subtitle">
+                    <?php esc_html_e('Odgovori na pitanja koja nam klijenti najčešće postavljaju prije snimanja.', 'flyrec'); ?>
+                </p>
+            </div>
+
+            <div class="faq-list">
+                <?php foreach ($faq_items as $i => $item) : ?>
+                    <details class="faq-item fade-up delay-<?php echo esc_attr((($i % 4) + 1)); ?>">
+                        <summary class="faq-question">
+                            <span><?php echo esc_html($item['q']); ?></span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><?php echo esc_html($item['a']); ?></p>
+                        </div>
+                    </details>
+                <?php endforeach; ?>
+            </div>
+
+        </div>
+    </section>
+    <!-- /FAQ -->
+
+    <?php
+    // Structured data (schema.org FAQPage) – pomaže Google-u da prikaže rich snippet u rezultatima pretrage
+    $faq_schema = array(
+        '@context'   => 'https://schema.org',
+        '@type'      => 'FAQPage',
+        'mainEntity' => array_map(function ($item) {
+            return array(
+                '@type'          => 'Question',
+                'name'           => $item['q'],
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => $item['a'],
+                ),
+            );
+        }, $faq_items),
+    );
+    ?>
+    <script type="application/ld+json"><?php echo wp_json_encode($faq_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
 
 
     <!-- =========================================

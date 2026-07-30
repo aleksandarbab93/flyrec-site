@@ -52,7 +52,7 @@ msgstr "Адрес email"
 msgid "Facebook"
 msgstr "Facebook"
 
-msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predela — sadržaj pogodan za turističku promociju i društvene mreže."
+msgid "Filmski video i fotografski prikazi prirode, turističkih lokacija i različitih destinacija širom Crne Gore — od Boke Kotorske do planinskih predjela — sadržaj pogodan za turističku promociju i društvene mreže."
 msgstr "Кинематографичное видео и фотосъёмка природы, туристических локаций и направлений по всей Черногории — от Боко-Которского залива до горных пейзажей — контент, подходящий для туристического продвижения и социальных сетей."
 
 msgid "FlyRec"
@@ -73,7 +73,7 @@ msgstr "Flyrec превращает моменты, пространства и 
 msgid "Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti — u saradnji sa agencijama za nekretnine, organizatorima događaja, turističkim operaterima i brendovima kojima je potrebna snimka iz vazduha."
 msgstr "Мы работаем по всей Черногории — от Боко-Которского залива и Будванской ривьеры до Подгорицы и внутренних районов — сотрудничая с агентствами недвижимости, организаторами мероприятий, туроператорами и брендами, которым нужна аэросъёмка."
 
-msgid "Svaki projekat počinje razgovorom o cilju snimanja — bilo da je reč o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu."
+msgid "Svaki projekat počinje razgovorom o cilju snimanja — bilo da je riječ o promotivnom videu, prezentaciji nekretnine ili dokumentovanju događaja — nakon čega planiramo let, snimamo i isporučujemo gotov, montiran materijal spreman za sajt, društvene mreže ili štampu."
 msgstr "Каждый проект начинается с разговора о цели съёмки — будь то промо-видео, презентация недвижимости или съёмка мероприятия — после чего мы планируем полёт, снимаем и передаём готовый, смонтированный материал, готовый для сайта, соцсетей или печати."
 
 msgid "Footer Navigacija"
@@ -106,7 +106,7 @@ msgstr "Изображение hero-блока"
 msgid "Hero video URL (MP4 iz Media Library ili YouTube link)"
 msgstr "URL hero-видео (MP4 из медиатеки или ссылка YouTube)"
 
-msgid "Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro."
+msgid "Hvala! Poruka je uspješno poslata. Javićemo Vam se uskoro."
 msgstr "Спасибо! Сообщение успешно отправлено. Мы скоро с вами свяжемся."
 
 msgid "Ime i prezime"
@@ -127,7 +127,7 @@ msgstr "С высоты"
 msgid "Izaberi jezik"
 msgstr "Выбрать язык"
 
-msgid "Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha."
+msgid "Izbor naših najnovijih snimaka i trenutaka zabilježenih iz vazduha."
 msgstr "Подборка наших последних съёмок и моментов, запечатлённых с высоты."
 
 msgid "Ko smo mi"
@@ -135,6 +135,51 @@ msgstr "Кто мы"
 
 msgid "Kontakt"
 msgstr "Контакты"
+
+msgid "Koliko unaprijed treba zakazati snimanje dronom?"
+msgstr "За сколько времени нужно бронировать съёмку дроном?"
+
+msgid "Preporučujemo da nas kontaktirate bar 5–7 dana unaprijed, posebno u sezoni (jun–septembar) kada je broj upita najveći. Za hitne termine, javite nam se i potrudićemo se da izađemo u susret u zavisnosti od trenutne dostupnosti i vremenskih uslova."
+msgstr "Рекомендуем связаться с нами как минимум за 5–7 дней, особенно в сезон (июнь–сентябрь), когда количество запросов самое большое. Для срочных заказов свяжитесь с нами — мы постараемся пойти навстречу в зависимости от текущей доступности и погодных условий."
+
+msgid "Da li imate dozvolu za letenje dronom?"
+msgstr "Есть ли у вас разрешение на полёты дроном?"
+
+msgid "Da, letimo u skladu sa važećim propisima o bespilotnim letjelicama u Crnoj Gori, uz sve potrebne dozvole i osiguranje. Prije svakog snimanja provjeravamo da li je lokacija u zoni leta bez ograničenja."
+msgstr "Да, мы летаем в соответствии с действующими правилами использования беспилотных летательных аппаратов в Черногории, имея все необходимые разрешения и страховку. Перед каждой съёмкой мы проверяем, находится ли локация в зоне полётов без ограничений."
+
+msgid "Šta se dešava ako je vrijeme loše na dan snimanja?"
+msgstr "Что происходит, если в день съёмки плохая погода?"
+
+msgid "Snimanje dronom zavisi od vremenskih uslova poput vjetra, kiše i magle. Ako prognoza ne dozvoljava bezbjedan let, zajedno dogovaramo novi termin bez dodatne naknade."
+msgstr "Съёмка дроном зависит от погодных условий, таких как ветер, дождь и туман. Если прогноз не позволяет безопасный полёт, мы вместе договариваемся о новой дате без дополнительной платы."
+
+msgid "Koliko košta snimanje dronom?"
+msgstr "Сколько стоит съёмка дроном?"
+
+msgid "Cijena zavisi od tipa usluge (događaji, nekretnine, pejzaži), lokacije i dužine snimanja. Pošaljite nam upit preko kontakt forme sa detaljima projekta i dobićete ponudu prilagođenu vašim potrebama."
+msgstr "Цена зависит от вида услуги (мероприятия, недвижимость, пейзажи), локации и продолжительности съёмки. Отправьте нам запрос через контактную форму с деталями проекта, и вы получите предложение, адаптированное под ваши потребности."
+
+msgid "U kojim dijelovima Crne Gore radite?"
+msgstr "В каких частях Черногории вы работаете?"
+
+msgid "Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti. Za snimanja van ove oblasti, kontaktirajte nas radi dogovora."
+msgstr "Мы работаем по всей Черногории — от Боко-Которской бухты и Будванской ривьеры до Подгорицы и внутренних районов. Для съёмок за пределами этой территории свяжитесь с нами для согласования."
+
+msgid "Koliko brzo dobijamo gotov materijal nakon snimanja?"
+msgstr "Как быстро мы получаем готовый материал после съёмки?"
+
+msgid "U zavisnosti od obima projekta, montirani materijal isporučujemo obično u roku od 3 do 7 radnih dana od dana snimanja."
+msgstr "В зависимости от объёма проекта, смонтированный материал обычно доставляется в течение 3–7 рабочих дней после съёмки."
+
+msgid "Pitanja i odgovori"
+msgstr "Вопросы и ответы"
+
+msgid "Često postavljena pitanja"
+msgstr "Часто задаваемые вопросы"
+
+msgid "Odgovori na pitanja koja nam klijenti najčešće postavljaju prije snimanja."
+msgstr "Ответы на вопросы, которые клиенты чаще всего задают перед съёмкой."
 
 msgid "Lokacija"
 msgstr "Локация"
@@ -151,7 +196,7 @@ msgstr "Монтаж и обработка"
 msgid "Montiranje promotivnih videa i obrada snimljenog materijala — od sirovog snimka do gotovog proizvoda spremnog za objavu."
 msgstr "Монтаж промо-видео и обработка отснятого материала — от исходной съёмки до готового продукта для публикации."
 
-msgid "Mrežna greška. Proverite konekciju i pokušajte ponovo."
+msgid "Mrežna greška. Provjerite konekciju i pokušajte ponovo."
 msgstr "Ошибка сети. Проверьте подключение и попробуйте снова."
 
 msgid "Najnoviji snimci"
@@ -247,7 +292,7 @@ msgstr "Премиальная тема WordPress для лендинга про
 msgid "Pretraži snimke"
 msgstr "Поиск видео"
 
-msgid "Pređi na svetlu temu"
+msgid "Pređi na svjetlu temu"
 msgstr "Переключить на светлую тему"
 
 msgid "Pređi na tamnu temu"
@@ -262,7 +307,7 @@ msgstr "Основная навигация"
 msgid "Primarna navigacija"
 msgstr "Основная навигация"
 
-msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori."
+msgid "Profesionalna prezentacija stanova, kuća, apartmana, poslovnih prostora i drugih nekretnina — aerial i zemaljski kadrovi koji lokaciju i ambijent prikazuju u najboljem svjetlu, idealno za oglase i agencije za nekretnine u Crnoj Gori."
 msgstr "Профессиональная презентация квартир, домов, коммерческих помещений и другой недвижимости — аэросъёмка и наземные кадры, которые показывают локацию и атмосферу в лучшем свете, идеально для объявлений и агентств недвижимости в Черногории."
 
 msgid "Profesionalni Drone Studio"
@@ -277,7 +322,7 @@ msgstr "Профессиональная аэросъёмка дроном"
 msgid "Profesionalno snimanje i fotografisanje proslava, poslovnih događaja, manifestacija i posebnih trenutaka — video i fotografije koje prenose atmosferu i najvažnije trenutke."
 msgstr "Профессиональная видео- и фотосъёмка торжеств, корпоративных мероприятий, событий и особых моментов — материал, передающий атмосферу и самые важные моменты."
 
-msgid "Promeni temu"
+msgid "Promijeni temu"
 msgstr "Сменить тему"
 
 msgid "Radovi"
@@ -331,7 +376,7 @@ msgstr "Все права защищены."
 msgid "Svaki projekat je jedinstven. Pišite nam i zajednički ćemo kreirati nešto što će ostaviti utisak."
 msgstr "Каждый проект уникален. Напишите нам, и мы вместе создадим что-то незабываемое."
 
-msgid "Svetla tema"
+msgid "Svjetla tema"
 msgstr "Светлая тема"
 
 msgid "Tamna tema"
@@ -364,7 +409,7 @@ msgstr "Редактировать видео"
 msgid "Usluge"
 msgstr "Услуги"
 
-msgid "Vaš svet iz nove perspektive."
+msgid "Vaš svijet iz nove perspektive."
 msgstr "Ваш мир с новой перспективы."
 
 msgid "Vaše ime"

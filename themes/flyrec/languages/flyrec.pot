@@ -140,7 +140,7 @@ msgid "Hero video URL (MP4 iz Media Library ili YouTube link)"
 msgstr ""
 
 #: functions.php:507
-msgid "Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro."
+msgid "Hvala! Poruka je uspješno poslata. Javićemo Vam se uskoro."
 msgstr ""
 
 #: front-page.php:363
@@ -169,7 +169,7 @@ msgid "Izaberi jezik"
 msgstr ""
 
 #: front-page.php:133
-msgid "Izbor naših najnovijih snimaka i trenutaka zabeleženih iz vazduha."
+msgid "Izbor naših najnovijih snimaka i trenutaka zabilježenih iz vazduha."
 msgstr ""
 
 #: front-page.php:257
@@ -181,6 +181,66 @@ msgstr ""
 #: footer.php:52
 #: footer.php:70
 msgid "Kontakt"
+msgstr ""
+
+#: front-page.php:401
+msgid "Koliko unaprijed treba zakazati snimanje dronom?"
+msgstr ""
+
+#: front-page.php:402
+msgid "Preporučujemo da nas kontaktirate bar 5–7 dana unaprijed, posebno u sezoni (jun–septembar) kada je broj upita najveći. Za hitne termine, javite nam se i potrudićemo se da izađemo u susret u zavisnosti od trenutne dostupnosti i vremenskih uslova."
+msgstr ""
+
+#: front-page.php:405
+msgid "Da li imate dozvolu za letenje dronom?"
+msgstr ""
+
+#: front-page.php:406
+msgid "Da, letimo u skladu sa važećim propisima o bespilotnim letjelicama u Crnoj Gori, uz sve potrebne dozvole i osiguranje. Prije svakog snimanja provjeravamo da li je lokacija u zoni leta bez ograničenja."
+msgstr ""
+
+#: front-page.php:409
+msgid "Šta se dešava ako je vrijeme loše na dan snimanja?"
+msgstr ""
+
+#: front-page.php:410
+msgid "Snimanje dronom zavisi od vremenskih uslova poput vjetra, kiše i magle. Ako prognoza ne dozvoljava bezbjedan let, zajedno dogovaramo novi termin bez dodatne naknade."
+msgstr ""
+
+#: front-page.php:413
+msgid "Koliko košta snimanje dronom?"
+msgstr ""
+
+#: front-page.php:414
+msgid "Cijena zavisi od tipa usluge (događaji, nekretnine, pejzaži), lokacije i dužine snimanja. Pošaljite nam upit preko kontakt forme sa detaljima projekta i dobićete ponudu prilagođenu vašim potrebama."
+msgstr ""
+
+#: front-page.php:417
+msgid "U kojim dijelovima Crne Gore radite?"
+msgstr ""
+
+#: front-page.php:418
+msgid "Radimo širom Crne Gore — od Boke Kotorske i budvanske rivijere do Podgorice i unutrašnjosti. Za snimanja van ove oblasti, kontaktirajte nas radi dogovora."
+msgstr ""
+
+#: front-page.php:421
+msgid "Koliko brzo dobijamo gotov materijal nakon snimanja?"
+msgstr ""
+
+#: front-page.php:422
+msgid "U zavisnosti od obima projekta, montirani materijal isporučujemo obično u roku od 3 do 7 radnih dana od dana snimanja."
+msgstr ""
+
+#: front-page.php:430
+msgid "Pitanja i odgovori"
+msgstr ""
+
+#: front-page.php:431
+msgid "Često postavljena pitanja"
+msgstr ""
+
+#: front-page.php:433
+msgid "Odgovori na pitanja koja nam klijenti najčešće postavljaju prije snimanja."
 msgstr ""
 
 #: functions.php:456
@@ -205,7 +265,7 @@ msgid "Montiranje promotivnih videa i obrada snimljenog materijala — od sirovo
 msgstr ""
 
 #: functions.php:129
-msgid "Mrežna greška. Proverite konekciju i pokušajte ponovo."
+msgid "Mrežna greška. Provjerite konekciju i pokušajte ponovo."
 msgstr ""
 
 #: front-page.php:131
@@ -340,7 +400,7 @@ msgstr ""
 
 #: functions.php:124
 #: header.php:128
-msgid "Pređi na svetlu temu"
+msgid "Pređi na svjetlu temu"
 msgstr ""
 
 #: functions.php:125
@@ -380,7 +440,7 @@ msgid "Profesionalno snimanje i fotografisanje proslava, poslovnih događaja, ma
 msgstr ""
 
 #: header.php:129
-msgid "Promeni temu"
+msgid "Promijeni temu"
 msgstr ""
 
 #: header.php:79
@@ -454,7 +514,7 @@ msgid "Svaki projekat je jedinstven. Pišite nam i zajednički ćemo kreirati ne
 msgstr ""
 
 #: functions.php:126
-msgid "Svetla tema"
+msgid "Svjetla tema"
 msgstr ""
 
 #: functions.php:127
@@ -503,7 +563,7 @@ msgid "Usluge"
 msgstr ""
 
 #: footer.php:19
-msgid "Vaš svet iz nove perspektive."
+msgid "Vaš svijet iz nove perspektive."
 msgstr ""
 
 #: front-page.php:364

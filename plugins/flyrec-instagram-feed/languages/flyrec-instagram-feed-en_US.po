@@ -379,7 +379,7 @@ msgstr "The connection to the Instagram account has been disconnected. Synced po
 msgid "Video"
 msgstr "Video"
 
-msgid "Video se ne može prikazati ovde."
+msgid "Video se ne može prikazati ovdje."
 msgstr "The video cannot be displayed here."
 
 msgid "Zalepi shortcode na bilo koju stranicu ili post:"

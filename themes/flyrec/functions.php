@@ -168,12 +168,12 @@ function flyrec_enqueue_scripts() {
         'ajaxUrl' => admin_url( 'admin-ajax.php' ),
         'nonce'   => wp_create_nonce( 'flyrec_contact_nonce' ),
         'i18n'    => [
-            'themeToLight'  => __( 'Pređi na svetlu temu', 'flyrec' ),
+            'themeToLight'  => __( 'Pređi na svjetlu temu', 'flyrec' ),
             'themeToDark'   => __( 'Pređi na tamnu temu', 'flyrec' ),
-            'themeLight'    => __( 'Svetla tema', 'flyrec' ),
+            'themeLight'    => __( 'Svjetla tema', 'flyrec' ),
             'themeDark'     => __( 'Tamna tema', 'flyrec' ),
             'sendError'     => __( 'Greška pri slanju. Pokušajte ponovo.', 'flyrec' ),
-            'networkError'  => __( 'Mrežna greška. Proverite konekciju i pokušajte ponovo.', 'flyrec' ),
+            'networkError'  => __( 'Mrežna greška. Provjerite konekciju i pokušajte ponovo.', 'flyrec' ),
         ],
     ] );
 }
@@ -542,7 +542,7 @@ function flyrec_handle_contact() {
     ];
 
     if ( wp_mail( $to, $subject, $body, $headers ) ) {
-        wp_send_json_success( [ 'message' => __( 'Hvala! Poruka je uspešno poslata. Javićemo Vam se uskoro.', 'flyrec' ) ] );
+        wp_send_json_success( [ 'message' => __( 'Hvala! Poruka je uspješno poslata. Javićemo Vam se uskoro.', 'flyrec' ) ] );
     } else {
         wp_send_json_error( [ 'message' => __( 'Greška pri slanju. Kontaktirajte nas direktno na email.', 'flyrec' ) ] );
     }

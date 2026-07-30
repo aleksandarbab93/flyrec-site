@@ -38,7 +38,7 @@ class Fig_Shortcode {
             'nonce'   => wp_create_nonce( Fig_Ajax::NONCE_PUBLIC ),
             'i18n'    => [
                 'loading'      => __( 'Učitavanje…', 'flyrec-instagram-feed' ),
-                'embedFailed'  => __( 'Video se ne može prikazati ovde.', 'flyrec-instagram-feed' ),
+                'embedFailed'  => __( 'Video se ne može prikazati ovdje.', 'flyrec-instagram-feed' ),
                 'openInstagram'=> __( 'Otvori na Instagramu', 'flyrec-instagram-feed' ),
                 'loadMore'     => __( 'Učitaj još', 'flyrec-instagram-feed' ),
             ],

@@ -157,8 +157,8 @@
             var isDark = theme === 'dark';
 
             var i18n = (typeof flyrecData !== 'undefined' && flyrecData.i18n) || {};
-            var ariaLabel = isDark ? (i18n.themeToLight || 'Pređi na svetlu temu') : (i18n.themeToDark || 'Pređi na tamnu temu');
-            var titleText = isDark ? (i18n.themeLight    || 'Svetla tema')          : (i18n.themeDark    || 'Tamna tema');
+            var ariaLabel = isDark ? (i18n.themeToLight || 'Pređi na svjetlu temu') : (i18n.themeToDark || 'Pređi na tamnu temu');
+            var titleText = isDark ? (i18n.themeLight    || 'Svjetla tema')          : (i18n.themeDark    || 'Tamna tema');
 
             if (btnDesktop) {
                 btnDesktop.setAttribute('aria-label', ariaLabel);
@@ -334,7 +334,7 @@
                 }
             })
             .catch(function () {
-                msgEl.textContent  = (flyrecData.i18n && flyrecData.i18n.networkError) || 'Mrežna greška. Proverite konekciju i pokušajte ponovo.';
+                msgEl.textContent  = (flyrecData.i18n && flyrecData.i18n.networkError) || 'Mrežna greška. Provjerite konekciju i pokušajte ponovo.';
                 msgEl.className    = 'form-message error';
                 msgEl.style.display = 'block';
             })

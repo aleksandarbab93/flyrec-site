@@ -379,7 +379,7 @@ msgstr "Связь с аккаунтом Instagram разорвана. Синх�
 msgid "Video"
 msgstr "Видео"
 
-msgid "Video se ne može prikazati ovde."
+msgid "Video se ne može prikazati ovdje."
 msgstr "Видео не может быть отображено здесь."
 
 msgid "Zalepi shortcode na bilo koju stranicu ili post:"

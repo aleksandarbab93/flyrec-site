@@ -550,7 +550,7 @@ msgid "Video"
 msgstr ""
 
 #: includes/class-fig-shortcode.php:41
-msgid "Video se ne može prikazati ovde."
+msgid "Video se ne može prikazati ovdje."
 msgstr ""
 
 #: admin/views/settings-page.php:209

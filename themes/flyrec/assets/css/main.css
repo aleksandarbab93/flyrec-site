@@ -1081,6 +1081,62 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
+/* ── FAQ ────────────────────────────────────── */
+.faq-list {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color var(--transition);
+}
+
+.faq-item[open],
+.faq-item:hover {
+    border-color: var(--border-hover);
+}
+
+.faq-question {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 26px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { content: ''; }
+
+.faq-icon {
+    flex-shrink: 0;
+    color: var(--accent);
+    transition: transform var(--transition);
+}
+
+.faq-item[open] .faq-icon { transform: rotate(180deg); }
+
+.faq-answer {
+    padding: 0 26px 24px;
+}
+
+.faq-answer p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.75;
+}
+
 /* ── KONTAKT ────────────────────────────────── */
 .section--contact { position: relative; }
 
@@ -1809,6 +1865,20 @@ a.contact-value:hover { color: var(--accent); }
 }
 
 [data-theme="light"] .portfolio-item--placeholder { border-color: #ddd; }
+
+/* ── LIGHT: FAQ ───────────────────────────── */
+[data-theme="light"] .faq-item {
+    background: #ffffff;
+    border-color: #e4e4e4;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.055);
+}
+
+[data-theme="light"] .faq-item[open],
+[data-theme="light"] .faq-item:hover {
+    border-color: rgba(232, 49, 42, 0.18);
+}
+
+[data-theme="light"] .faq-question { color: #111111; }
 
 /* ── LIGHT: Kontakt forma ─────────────────── */
 [data-theme="light"] .contact-form-wrapper {

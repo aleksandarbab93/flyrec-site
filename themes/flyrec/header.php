@@ -130,8 +130,8 @@
         <button
             class="theme-toggle"
             id="themeToggle"
-            aria-label="<?php esc_attr_e( 'Pređi na svetlu temu', 'flyrec' ); ?>"
-            title="<?php esc_attr_e( 'Promeni temu', 'flyrec' ); ?>"
+            aria-label="<?php esc_attr_e( 'Pređi na svjetlu temu', 'flyrec' ); ?>"
+            title="<?php esc_attr_e( 'Promijeni temu', 'flyrec' ); ?>"
         >
             <span class="icon-sun" aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
