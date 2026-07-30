@@ -79,6 +79,7 @@
                 <li><a href="#portfolio"  class="nav-link"><?php esc_html_e( 'Radovi',  'flyrec' ); ?></a></li>
                 <li><a href="#usluge"  class="nav-link"><?php esc_html_e( 'Usluge',  'flyrec' ); ?></a></li>
                 <li><a href="#o-nama"  class="nav-link"><?php esc_html_e( 'O nama',  'flyrec' ); ?></a></li>
+                <li><a href="#faq"     class="nav-link">FAQ</a></li>
                 <li><a href="#kontakt" class="nav-link nav-link--cta"><?php esc_html_e( 'Kontakt', 'flyrec' ); ?></a></li>
             </ul>
         </nav>
@@ -165,6 +166,7 @@
             <li><a href="#portfolio"  class="mobile-nav-link"><?php esc_html_e( 'Radovi',  'flyrec' ); ?></a></li>
             <li><a href="#usluge"  class="mobile-nav-link"><?php esc_html_e( 'Usluge',  'flyrec' ); ?></a></li>
             <li><a href="#o-nama"  class="mobile-nav-link"><?php esc_html_e( 'O nama',  'flyrec' ); ?></a></li>
+            <li><a href="#faq"     class="mobile-nav-link">FAQ</a></li>
             <li><a href="#kontakt" class="mobile-nav-link mobile-nav-link--cta"><?php esc_html_e( 'Kontakt', 'flyrec' ); ?></a></li>
         </ul>
 
